@@ -1,1 +1,10 @@
-First version of the draft.
+From v0.1:
+=========
+
+(*) Edited first half of the foreground_power_spectra_modeling.tex file upto and
+including section 6. 
+(*) Removed unnecessary .eps files from the version and use only those needed to 
+compile.
+
+---------------------------------------------------------------------------------
+v0.1: First version of the draft.
