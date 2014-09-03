@@ -1,3 +1,13 @@
+From v0.2:
+=========
+
+(*) Edited second half of the foreground_power_spectra_modeling.tex file beyond
+section 6.
+(*) Removed unnecessary .eps files from the version and use only those needed to
+compile.
+(*) Simplified justification of agreement of data with simulations.
+
+---------------------------------------------------------------------------------
 From v0.1:
 =========
 
