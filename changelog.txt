@@ -1,3 +1,16 @@
+From v0.3.1:
+===========
+
+(*) Added the full author list
+
+---------------------------------------------------------------------------------
+From v0.3:
+=========
+
+(*) Forgot to add modified changelog.txt to the commit which was done in this
+version.
+
+---------------------------------------------------------------------------------
 From v0.2:
 =========
 
