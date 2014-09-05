@@ -1,3 +1,22 @@
+From danny1:
+===========
+
+(*) Fixed the citation labels included by Danny
+(*) Added a bibtex entry to the eor.bib for an additional reference
+(*) Added empty sections 'Discussion' and 'Conclusions' just to compile without
+errors
+
+---------------------------------------------------------------------------------
+From v0.3.2:
+===========
+
+(*) Danny changed abstract and intro and also replaced interferometer with
+baseline to match vernacular usage 
+(*) Danny added a few additional references
+(*) Danny made a few other miscellaneous edits
+(*) Nithya pulled Danny's version into a branch danny1
+
+---------------------------------------------------------------------------------
 From v0.3.1:
 ===========
 
