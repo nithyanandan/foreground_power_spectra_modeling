@@ -1,3 +1,27 @@
+Merge of 7f56240 on branch v0.3.2b and 6807765 on branch danny1:
+===============================================================
+
+(*) Merged danny1 branch with v0.3.2b after resolving all conflicts
+(*) Made substantial changes to abstract and some changes to intro. Other changes
+are minor.
+(*) Changed use of interferometer and baseline to antenna pair.
+(*) Added two references in eor.bib for mentioning AOFlagger in data analysis
+(*) For changelog details from branch danny1, refer to changelog of branch danny1
+
+---------------------------------------------------------------------------------
+From 271f922 on branch v0.3.2b:
+==============================
+
+(*) Compiled to produce ps and pdf files
+
+---------------------------------------------------------------------------------
+From v0.3.2:
+===========
+
+(*) Created branch v0.3.2b
+(*) Removed some of the comments
+
+---------------------------------------------------------------------------------
 From v0.3.1:
 ===========
 
