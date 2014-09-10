@@ -1,3 +1,8 @@
+From f0b7176 on branch danny2:
+=============================
+
+(*) Made few minor edits and removed some commented sentences
+
 From v0.4 (b4741f4) and 2e40b94 from Danny:
 ==========================================
 
