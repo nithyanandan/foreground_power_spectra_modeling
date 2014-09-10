@@ -1,3 +1,13 @@
+From v0.4 (b4741f4) and 2e40b94 from Danny:
+==========================================
+
+(*) Created a branch danny2 and merged Danny's updated repository into this 
+branch
+(*) Removed references to labels sec:discussion and sec:discussion to let the 
+file compile in LaTeX without warnings and modified those places accordingly.
+(*) Minor edits throughout
+(*) Changed structure slightly in section 3 to increase reading continuity
+
 Merge of 7f56240 on branch v0.3.2b and 6807765 on branch danny1:
 ===============================================================
 
