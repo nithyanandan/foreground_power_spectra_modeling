@@ -1,3 +1,8 @@
+From f3f12ba on master after merging with branch danny2:
+=======================================================
+
+(*) Created ps and pdf files after merging with master branch
+
 From f0b7176 on branch danny2:
 =============================
 
