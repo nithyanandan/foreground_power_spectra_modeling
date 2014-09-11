@@ -1,3 +1,11 @@
+From v0.5.1:
+===========
+
+(*) Mentioned cosmological parameters used in the paper.
+(*) Wrote expression for relationship between k-parallel and eta
+(*) Mentioned center frequency corresponds to redshift of 6.68
+(*) Changed figure captions.
+
 From v0.5:
 =========
 
