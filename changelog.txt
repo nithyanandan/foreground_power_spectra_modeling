@@ -1,3 +1,11 @@
+From v0.5:
+=========
+
+(*) Added an entry to Sullivan et al.(2012) in the eor.bib file and cited this
+reference in the tex file.
+(*) Updated figures
+(*) Removed empty appendix 
+
 From f3f12ba on master after merging with branch danny2:
 =======================================================
 
