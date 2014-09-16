@@ -1,3 +1,12 @@
+From v0.5.3:
+===========
+
+(*) Added .aux, .bbl, .blg, .log and .bib files produced during compilation to 
+the repository to be compatible with Judd's repository
+
+From v0.5.2:
+===========
+
 Merged v0.5.2 with branch danny3 (52ae697) after resolving merge conflicts. Made
 minor changes.
 
