@@ -1,3 +1,10 @@
+From 26f9efa:
+============
+
+(*) Fixed some typographical errors
+(*) Appended figure names with extension .eps to allow to compile and display
+(*) Added few citations and modified eor.bib
+
 Merged v0.5.2 with branch danny3 (52ae697) after resolving merge conflicts. Made
 minor changes.
 

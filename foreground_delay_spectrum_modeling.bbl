@@ -13,11 +13,46 @@
 {Beardsley}, A.~P., {Hazelton}, B.~J., {Morales}, M.~F., {et~al.} 2012, \mnras,
   425, 1781
 
+\bibitem[{{Beardsley} {et~al.}(2013){Beardsley}, {Hazelton}, {Morales},
+  {Arcus}, {Barnes}, {Bernardi}, {Bowman}, {Briggs}, {Bunton}, {Cappallo},
+  {Corey}, {Deshpande}, {deSouza}, {Emrich}, {Gaensler}, {Goeke}, {Greenhill},
+  {Herne}, {Hewitt}, {Johnston-Hollitt}, {Kaplan}, {Kasper}, {Kincaid},
+  {Koenig}, {Kratzenberg}, {Lonsdale}, {Lynch}, {McWhirter}, {Mitchell},
+  {Morgan}, {Oberoi}, {Ord}, {Pathikulangara}, {Prabu}, {Remillard}, {Rogers},
+  {Roshi}, {Salah}, {Sault}, {Udaya}, {Srivani}, {Stevens}, {Subrahmanyan},
+  {Tingay}, {Wayth}, {Waterson}, {Webster}, {Whitney}, {Williams}, {Williams},
+  \& {Wyithe}}]{bea13}
+---. 2013, \mnras, 429, L5
+
 \bibitem[{{Bock} {et~al.}(1999){Bock}, {Large}, \& {Sadler}}]{boc99}
 {Bock}, D.~C.-J., {Large}, M.~I., \& {Sadler}, E.~M. 1999, \aj, 117, 1578
 
+\bibitem[{{Bowman} {et~al.}(2006){Bowman}, {Morales}, \& {Hewitt}}]{bow06}
+{Bowman}, J.~D., {Morales}, M.~F., \& {Hewitt}, J.~N. 2006, \apj, 638, 20
+
 \bibitem[{{Bowman} {et~al.}(2009){Bowman}, {Morales}, \& {Hewitt}}]{bow09}
-{Bowman}, J.~D., {Morales}, M.~F., \& {Hewitt}, J.~N. 2009, \apj, 695, 183
+---. 2009, \apj, 695, 183
+
+\bibitem[{{Bowman} {et~al.}(2007){Bowman}, {Barnes}, {Briggs}, {Corey},
+  {Lynch}, {Bhat}, {Cappallo}, {Doeleman}, {Fanous}, {Herne}, {Hewitt},
+  {Johnston}, {Kasper}, {Kocz}, {Kratzenberg}, {Lonsdale}, {Morales}, {Oberoi},
+  {Salah}, {Stansby}, {Stevens}, {Torr}, {Wayth}, {Webster}, \&
+  {Wyithe}}]{bow07b}
+{Bowman}, J.~D., {Barnes}, D.~G., {Briggs}, F.~H., {et~al.} 2007, \aj, 133,
+  1505
+
+\bibitem[{{Bowman} {et~al.}(2013){Bowman}, {Cairns}, {Kaplan}, {Murphy},
+  {Oberoi}, {Staveley-Smith}, {Arcus}, {Barnes}, {Bernardi}, {Briggs}, {Brown},
+  {Bunton}, {Burgasser}, {Cappallo}, {Chatterjee}, {Corey}, {Coster},
+  {Deshpande}, {deSouza}, {Emrich}, {Erickson}, {Goeke}, {Gaensler},
+  {Greenhill}, {Harvey-Smith}, {Hazelton}, {Herne}, {Hewitt},
+  {Johnston-Hollitt}, {Kasper}, {Kincaid}, {Koenig}, {Kratzenberg}, {Lonsdale},
+  {Lynch}, {Matthews}, {McWhirter}, {Mitchell}, {Morales}, {Morgan}, {Ord},
+  {Pathikulangara}, {Prabu}, {Remillard}, {Robishaw}, {Rogers}, {Roshi},
+  {Salah}, {Sault}, {Shankar}, {Srivani}, {Stevens}, {Subrahmanyan}, {Tingay},
+  {Wayth}, {Waterson}, {Webster}, {Whitney}, {Williams}, {Williams}, \&
+  {Wyithe}}]{bow13}
+{Bowman}, J.~D., {Cairns}, I., {Kaplan}, D.~L., {et~al.} 2013, \pasa, 30, 31
 
 \bibitem[{{Condon} {et~al.}(1998){Condon}, {Cotton}, {Greisen}, {Yin},
   {Perley}, {Taylor}, \& {Broderick}}]{con98}
@@ -53,6 +88,11 @@ Dillon, J.~S., Liu, A., \& Tegmark, M. 2013, Phys. Rev. D, 87, 043005
 
 \bibitem[{{Liu} \& {Tegmark}(2011)}]{liu11}
 {Liu}, A., \& {Tegmark}, M. 2011, \prd, 83, 103006
+
+\bibitem[{{Liu} {et~al.}(2009){Liu}, {Tegmark}, {Bowman}, {Hewitt}, \&
+  {Zaldarriaga}}]{liu09}
+{Liu}, A., {Tegmark}, M., {Bowman}, J., {Hewitt}, J., \& {Zaldarriaga}, M.
+  2009, \mnras, 398, 401
 
 \bibitem[{{Lonsdale} {et~al.}(2009){Lonsdale}, {Cappallo}, {Morales}, {Briggs},
   {Benkevitch}, {Bowman}, {Bunton}, {Burns}, {Corey}, {Desouza}, {Doeleman},
@@ -114,6 +154,11 @@ Dillon, J.~S., Liu, A., \& Tegmark, M. 2013, Phys. Rev. D, 87, 043005
   {MacMahon}, {Manley}, {Moore}, {Stefan}, \& {Walbrugh}}]{pob13}
 {Pober}, J.~C., {Parsons}, A.~R., {Aguirre}, J.~E., {et~al.} 2013, \apjl, 768,
   L36
+
+\bibitem[{{Pober} {et~al.}(2014){Pober}, {Liu}, {Dillon}, {Aguirre}, {Bowman},
+  {Bradley}, {Carilli}, {DeBoer}, {Hewitt}, {Jacobs}, {McQuinn}, {Morales},
+  {Parsons}, {Tegmark}, \& {Werthimer}}]{pob14}
+{Pober}, J.~C., {Liu}, A., {Dillon}, J.~S., {et~al.} 2014, \apj, 782, 66
 
 \bibitem[{{Sullivan} {et~al.}(2012){Sullivan}, {Morales}, {Hazelton}, {Arcus},
   {Barnes}, {Bernardi}, {Briggs}, {Bowman}, {Bunton}, {Cappallo}, {Corey},
