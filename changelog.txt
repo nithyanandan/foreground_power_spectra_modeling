@@ -1,3 +1,8 @@
+Merged branch judd1 onto master branch after resolving merge conflicts
+
+----------------------------------
+In master branch:
+
 From 4ae68a9:
 ============
 
@@ -15,6 +20,29 @@ From v0.5.3:
 
 (*) Added .aux, .bbl, .blg, .log and .bib files produced during compilation to 
 the repository to be compatible with Judd's repository
+
+-----------------------------------
+In branch judd1 from Judd's updates:
+
+From bfd280f:
+============
+
+(*) Removed .aux, .log, .bbl, .bib and .blg files produced during LaTeX
+compilation from git tracking
+
+From 26f9efa:
+============
+
+(*) Fixed some typographical errors
+(*) Appended figure names with extension .eps to allow to compile and display
+(*) Added few citations and modified eor.bib
+
+From v0.5.3:
+===========
+
+(*) Judd provided updates
+
+-----------------------------------
 
 From v0.5.2:
 ===========
