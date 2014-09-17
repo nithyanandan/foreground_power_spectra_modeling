@@ -1,3 +1,9 @@
+From bfd280f:
+============
+
+(*) Removed .aux, .log, .bbl, .bib and .blg files produced during LaTeX
+compilation from git tracking
+
 From 26f9efa:
 ============
 
