@@ -1,3 +1,15 @@
+From d78e0ca:
+============
+
+(*) Made minor change to title
+(*) Added new figures
+(*) Changed wording as Judd suggested
+(*) Changed Tsys to 95 K and made corresponding changes to all figures
+(*) Added reference(s) to eor.bib and cited them in text
+(*) Introduction and nomenclature on 'baseline' yet to be reworded
+
+-----------------------------------------------------------------------
+
 Merged branch judd1 onto master branch after resolving merge conflicts
 
 ----------------------------------
