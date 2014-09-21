@@ -1,3 +1,9 @@
+From 2dc2fc1:
+============
+
+(*) Minor edits from section 4 to the end
+(*) Need to verify color scale on delay spectra
+
 From v0.6:
 =========
 
