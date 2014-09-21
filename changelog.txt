@@ -1,3 +1,8 @@
+From v0.6.1:
+===========
+
+(*) Modified figures to have identical colorscale for delay spectra
+
 From 2dc2fc1:
 ============
 
