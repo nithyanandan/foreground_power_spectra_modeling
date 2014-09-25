@@ -1,3 +1,13 @@
+From v0.6.2:
+===========
+
+(*) Made minor changes (danny's comments) in the first paragraph of Introduction 
+(*) Incorporated Judd's suggested changes.
+(*) Modified the figures a little bit.
+(*) Removed the bandpass figure
+(*) Tweaked the title a little bit
+(*) Submitted to MWA EoR collaboration
+
 From v0.6.1:
 ===========
 
