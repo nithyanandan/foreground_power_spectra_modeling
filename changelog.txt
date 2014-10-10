@@ -1,3 +1,10 @@
+From 5b726ca:
+============
+
+(*) Added space after degree symbol.
+(*) Merged branch 'Steven' with 'master'
+(*) Revised author list (removed Desh and Bryan) and rearranged affiliation ordering
+
 From v0.7-MWA-EoR:
 =================
 
