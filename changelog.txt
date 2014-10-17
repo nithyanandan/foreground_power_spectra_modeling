@@ -1,3 +1,9 @@
+From 89b3f2f:
+============
+
+(*) Revised section on delay spectrum math and changed notations.
+(*) Added a few references in eor.bib
+
 From 1d1c070:
 ============
 
