@@ -1,3 +1,10 @@
+From 164a6dd:
+============
+
+(*) Made changes to figure axes and few figures.
+(*) Added a bit more description about how foreground contamination used in 
+figure 14 is defined
+
 From 89b3f2f:
 ============
 
