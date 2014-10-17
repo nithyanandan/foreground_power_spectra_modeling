@@ -1,3 +1,8 @@
+From 1d1c070:
+============
+
+(*) Made minor changes based on Abraham's comments.
+
 From 5b726ca:
 ============
 
