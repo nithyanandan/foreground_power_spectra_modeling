@@ -1,3 +1,11 @@
+From 071aa02:
+============
+
+(*) Changed color scale of figure 6 showing compact foreground model
+(*) Made changes based on most of Jonnie's comments
+(*) Major changes include justification of compact source flux density threshold
+(*) Modified a couple of figures as per Jonnie's suggestion
+
 From 164a6dd:
 ============
 
