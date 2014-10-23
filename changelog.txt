@@ -1,3 +1,10 @@
+from 6865031:
+============
+
+(*) Removed the histogram figure from git tracking
+(*) Removed the corresponding commented portions relating to the histogram
+figure
+
 from 4d54f99:
 ============
 
