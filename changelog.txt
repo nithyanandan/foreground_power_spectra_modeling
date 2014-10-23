@@ -1,3 +1,10 @@
+from 4d54f99:
+============
+
+(*) Changed paragraph justifying discrepancy between data and simulations. 
+(*) Commented out the figure showing the histogram of log(rho) and instead 
+justified by text
+
 from d1904dc:
 ============
 
