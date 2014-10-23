@@ -1,3 +1,9 @@
+from 449b860:
+============
+
+(*) Incorporated Judd's comments
+(*) Changed a few figures
+
 From 910390d:
 ============
 
