@@ -1,3 +1,11 @@
+from d1904dc:
+============
+
+(*) Incorporated most of Josh's comments
+(*) Changed one figure a little
+(*) Changed the usage of "compact objects" -- addressing comments from both Josh
+and Abraham
+
 from 449b860:
 ============
 
