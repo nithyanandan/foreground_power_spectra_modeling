@@ -1,3 +1,13 @@
+from 2845225:
+============
+
+(*) Added a reference to eor.bib
+
+from e6fc8c0:
+============
+
+(*) Danny made a few edits mostly in section 3 and committed in 2845225
+
 from 6865031:
 ============
 
@@ -115,6 +125,8 @@ Merged branch judd1 onto master branch after resolving merge conflicts
 ----------------------------------
 In master branch:
 
+=======
+>>>>>>> 0e9e86a... From 4ae68a9:
 From 4ae68a9:
 ============
 
