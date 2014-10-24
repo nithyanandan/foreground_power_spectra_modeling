@@ -1,7 +1,14 @@
+*** Merged fake commit of e6fc8c0 namely a4377c3 with branch danny4 2845225 ***
+
+from 2845225:
+============
+
+(*) Added a reference to eor.bib
+
 from e6fc8c0:
 ============
 
-(*) Fake commit. No real changes.
+(*) Danny made a few edits mostly in section 3 and committed in 2845225
 
 from 6865031:
 ============
