@@ -1,3 +1,8 @@
+from 25ffb16:
+============
+
+(*) Explanation added for approximation between eta and k_parallel
+
 from b190614:
 ============
 
