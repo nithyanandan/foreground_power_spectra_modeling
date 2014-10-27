@@ -1,3 +1,9 @@
+from 1ccdf83:
+============
+
+(*) Rearranged author list and affiliations after including EoR authors and 
+changed the acknowledgments
+
 from 352eeab:
 ============
 
