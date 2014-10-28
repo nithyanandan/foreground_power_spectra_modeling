@@ -1,3 +1,8 @@
+from 72b1565:
+============
+
+(*) Minor changes in wording of 5% loss of data
+
 from 77bd60a:
 ============
 
