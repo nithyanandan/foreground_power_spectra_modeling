@@ -1,3 +1,8 @@
+from 6d6afb6:
+============
+
+(*) Added a citation to MWACS paper in eor.bib and changed the citation in text
+
 from cc116a6:
 ============
 
