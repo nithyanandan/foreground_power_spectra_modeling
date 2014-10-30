@@ -1,7 +1,12 @@
+from cc116a6:
+============
+
+(*) Changed Josh's listed name
+
 from cea73cb:
 ============
 
-(*) Added Chen Wu as an author
+(*) Added Chen Wu as an author with UWA affiliation
 
 from 72b1565:
 ============
