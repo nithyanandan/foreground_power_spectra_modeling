@@ -1,3 +1,12 @@
+from 8cee1bd:
+============
+
+(*) Made minor corrections to wording of baseline screening
+(*) Changed RA convention
+(*) Changed date convention
+(*) Removed unnecessary comments
+(*) Changed keywords
+
 from 6d6afb6:
 ============
 
