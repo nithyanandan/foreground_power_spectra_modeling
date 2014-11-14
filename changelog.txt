@@ -1,3 +1,10 @@
+from b6bc2fd:
+============
+
+(*) Renamed figure files to ApJ-compatible names and moved them out to parent
+folder
+(*) Removed the separate figures folder
+
 from c749db3:
 ============
 
