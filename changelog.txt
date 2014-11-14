@@ -1,3 +1,8 @@
+from c749db3:
+============
+
+(*) Renamed the tex, ps, and pdf files to ms.tex, ms.ps and ms.pdf respectively
+
 from 8cee1bd:
 ============
 
