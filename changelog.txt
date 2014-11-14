@@ -1,3 +1,11 @@
+from 414479c:
+============
+
+(*) Created ms.tar.gz file consisting of ms.tex, ms.pdf, eor.bib, apj.bst, 
+emulateapj.cls, f1.eps, f2.eps, f3.eps, f4.eps, f5.eps, f6.eps, f7.eps, f8.eps,
+f9.eps, f10.eps, f11a.eps, f11b.eps, f11c.eps, f12.eps, and f13.eps for ApJ
+submission
+
 from b6bc2fd:
 ============
 
