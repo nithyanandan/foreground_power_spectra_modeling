@@ -1,3 +1,21 @@
+from 6c334db (tag ApJ1.0):
+=========================
+
+Created a branch ApJ1.0_rev to address referee comments to ApJ1.0
+
+In eor.bib,
+
+(*) Modified reference par12 to par12b, and added another Parsons et al. (2012)
+as par12a.
+
+In ms.tex,
+
+(*) Addressed minor comments
+(*) Changed references to par12 to par12b and added new citations to par12a
+(*) Made minor changes to notations
+
+Added ApJ_referee_report_1_addressed.txt to version control
+
 from 414479c:
 ============
 

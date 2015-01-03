@@ -1,0 +1,176 @@
+December 13, 2014 
+
+Dr. Nithyanandan Thyagarajan
+Arizona State University
+School of Earth and Space Exploration
+PO Box 876004
+Tempe, Arizona 85287
+
+
+Title: A DISSECTION OF FOREGROUNDS IN EPOCH OF REIONIZATION OBSERVATIONS FROM THE MURCHISON WIDEFIELD ARRAY
+
+Dear Dr. Thyagarajan,
+
+I have received the referee's report on your above submission to The Astrophysical Journal, and appended it below. As you will see, the referee thinks that your article is interesting and that it will merit publication once you have addressed the issues raised in the report.
+
+When you resubmit the manuscript, please include a detailed cover letter containing the (mandatory) listing of the changes you've made to the text and your responses to the report.
+
+Click the link below to upload your revised manuscript; 
+http://apj.msubmit.net/cgi-bin/main.plex?el=A5Ew7xq2A5mGB3J5A9ftdeQXnS9zT2Fvs840o0yJUDQZ
+Alternatively, you may also log into your account at the EJ Press web site, http://apj.msubmit.net. Please use your user's login name: t_nithyanandan. You can then ask for a new password via the Unknown/Forgotten Password link if you have forgotten your password. 
+
+Reviewers find it helpful if the changes in the text of the manuscript are easily distinguishable from the rest of the text. Therefore we ask you to print changes in bold face. The highlighting can be removed easily after the review.
+
+The Astrophysical Journal has adopted a new policy that manuscript files become inactive, and are considered to have been withdrawn, six months after the most recent referee's report goes to the authors, provided a revised version has not been received by that time.
+
+If you have any questions, feel free to contact me.
+
+Regards,
+Ethan T. Vishniac
+Editor-in-Chief
+The Astrophysical Journal
+University of Saskatchewan
+---------------------------------------------------------------------- 
+Referee Report 
+Reviewer's Comments:
+This paper investigates the delay-spectrum technique from Parsons et al. 2012 as applied to observations from the Murchison Widefield Array. Both simulations and actual observations are used in this investigation, and interestingly, simulations involving different model components yield certain distinct imprints in the resultant delay spectrum. These imprints have not been documented in the literature to date, and may be of significant value for future 21cm EoR observations employing the delay-spectrum technique. They potentially enable experiments to trace back certain features in power spectra back to the foreground components from which they arise.
+Overall, I think the theme of this paper is a good one. It provides pithy insights into a relatively new analysis technique. The application of this technique to data from a new telescope (the MWA) rather than the one it was invented on (PAPER) is also valuable, and helps establish the breadth and impact of this technique. Finally, simulations provide a strong foundation for understanding the interaction of the instrument and foregrounds, as viewed through the lens of the delay transform. These simulations are perhaps the most important part of the paper. They bring some fundamentally new insights about which aspects of foreground structure are most likely to impact 21cm reionization power spectrum measurements the most.
+With some modest modifications, I would be enthusiastic about accepting this article for publication. The modifications I recommend fall broadly into three categories. The first, and perhaps the most ambitious, concerns defining a broader scope for the paper. The second concerns aspects of the presentation that could be improved to make it more accessible to readers who are less intimately familiar with these techniques and their application. The final category concerns several statements and citations that lack precision or accuracy and thereby detract from the otherwise fundamentally sound analysis that is conducted. I will discuss each category in more detail below.
+Scope. I believe that the scope of this paper is unnecessarily narrow. Obviously, application to the MWA is emphasized here because it is the instrument under study by the authors, and indeed, observations with the MWA provide important validation of the simulations. However, I believe it is a significant oversight that the authors do not use their simulations to explore a more general context. In particular, I do not think that the the authors have adequately captured the impact of the primary beam on the characteristic "pitchfork" profile they identify in their delay-spectrum plots. Simulations with a flat beam and gaussian beams of several sizes could help establish whether the dip between the point source emission and the foreshortened diffuse emission near the horizon is a universal feature, or is MWA-specific. Is there something to be learned here about what the desirable characteristics of the primary beam might be for this type of analysis?
+Presentation. This paper builds from a technique that was developed and applied to PAPER analysis in three previous papers (Parsons & Backer 2009, Parsons et. al 2012a, Parsons et al. 2012b; hereafter PB09, P12a, and P12b, respectively). Section 2 is, in fact, largely a rehash of P12a (which is not cited) and P12b. This section should state up front that it is basically following that derivation, and more importantly, I see no reason why it shouldn't follow the same notation convention, unless there is a compelling reason not to do so. This paper also neglects to put power spectra in the widely accepted units of mK^2 Mpc^3. Combined with the fact that the frequency band and bandwidth of the delay transform are never mentioned (as far as I can see), this creates unnecessary challenges for readers who have been following this technique.
+Secondly, this paper dives so quickly into jargon, it is likely to leave all but the most expert readers behind. Examples include: mentioning the delay spectrum technique in the abstract without any clarification of what that means; referencing "wide antenna spacings" in the abstract; drawing the comparison between delays and lags relatively late in the paper; not mentioning what the "transverse direction" is transverse to, failing to cite the various MWA papers describing the instrument and observing strategy. I would urge the authors to carefully review the manuscript for concepts that might be unfamiliar to the general reader and invest a bit more work in trying to bring that reader along. One thing that I think would really help is a diagram that helps visualize the relationship between delay and celestial position.
+Precision/Accuracy. Although I will call out specific statements that I believe to be incorrect, imprecise, unclear or misleading, I would urge the authors to make another careful read to find statements I might have missed. A large category of error that I don't think I was able to fully capture was citing papers for statements that are not quite aligned with the message of the paper that is cited. Please review the citations to be sure they are appropriate for the statement they follow.
+
+Abstract:
+
+1) provide some context for "delay spectrum technique"
+[Response] Added a brief description in abstract
+
+2) "even on wide antenna spacings" please explain why one would think otherwise
+[Response] Added a brief description in abstract
+
+Section 1:
+
+3) P3: not all of the listed telescopes are considered SKA precursors. Might add HERA to list.
+[Response] Modified "precursors" to "pathfinders and precursors". Added HERA to the list with a URL reference.
+
+4) Parsons et al. 2012a "A Sensitivity Study..." is also a relevant sensitivity study
+[Response] Cited Parsons et al. 2012a
+
+5) P4: "distinguishable from sources of contamination by virtue of their inherent spectral smoothness" Pober et al. 2013 is relevant for having actually showed this.
+[Response] Cited Pober et al. (2013)
+
+6) P5: "model of scattering" scattering is a misleading word to use here
+[Response] Re-worded the sentence.
+
+7) P6: "conservative foreground strategy that has been developed" cite examples of application of these techniques
+[TBD] 
+
+8) P7: "the individual baseline-based approach" Parsons et al 2012b "A Per-Baseline..." is the appropriate reference here 
+[Response] Changed the citations.
+
+9) P8: "signature" -> shape?
+[Response] Changed "... signature of the power ..." to "... shape of the delay ..."
+
+10) "obfuscate" is not the right word here
+[Response] changed "obfuscate" to "obscure"
+
+11) "a new method for minimizing" looking ahead a bit, down weighting contaminated modes is encompassed in the inverse covariance weighting suggested in, e.g. Liu et al 2014a and 2014b. Might want to put the presented approach in that context.
+[TBD]
+
+Section 2:
+
+12) Should mention that S2 is reviewing Parsons et al 2012a,b
+[Response] Mentioned that we provide a brief overview of Parsons et al 2012a,b in the introduction where the one-line descriptions of sections appear.
+
+13) Eqs. 1,2,4,5 Suggest following the \tilde V_\nu notation of Parsons et al 2012a. No need to have both subscripts and arguments (e.g. b should be a subscript or an argument, but not both).
+[Response] Made minor changes to notation. Removed the vector symbol on top of vector quantities and replaced with bold fonts. Only for the first appearance the subscript are used to emphasize they are the arguments using the \equiv symbol. Subsequently, only the subscripts are used and arguments have been dropped to remove redundancy. We avoid the tilde notation in order to make it explicit what arguments they are functions of and also because the tilde notation is difficult to implement in figures.
+
+14) P1: "We wish to emphasize that this equation is valid in general and does not involve any approximation." This is perhaps an overstatement. Maybe more relevant to name some specific approximations it does not involve.
+[Response] Reworded to point out that it is valid even for wide-field applications where the sky cannot be treated to be flat.
+
+15) Eq 2 should use a define (\equiv) rather than equality.
+[Response] equality has been changed to \equiv in equations 2 and 5 which are defined as Fourier transforms.
+
+16) Eq. 2 uses a prime on W that is not used in Eq. 4 and elsewhere. Please make consistent.
+[Response] We use W' only when transforming along frequency axis to either \tau or \eta as an additional weighting function to keep sidelobes down and don't consider it as a fundamental part of the measured visibilities. Thus W' only occurs in equations 2 and 5. In section 3.4, we mention using a Blackman-Harris window function for W'.
+
+17) P3: defining \vec u\equiv\vec b/\lambda is an acceptable (although nonstandard) usage, but this is then not compatible with defining \vec k_\perp\equiv 2\pi\vec u/D(z), because \vec k_\perp is only a 2D vector.
+[TBD] 
+
+18) P4: after just introducing \tau, \eta is introduced. Would help to clarify the distinction between the two.
+[TBD] 
+
+19) Eq. 5 only holds under the assumption that V_uf is sampled for every \vec u (since u is generally frequency dependent). This is somewhat at odds with the definition in P3, which, through use of \vec u=\vec b/lambda, implies that V_uf is defined for a single baseline. In general, this is a very tricky and subtle issue that should be addressed carefully.
+[TBD] 
+
+20) P4: would like to see P(k) treated in mK^2 units throughout the paper and use the correct constants rather than say P(k) \propto |V|^2
+[TBD] 
+
+21) P5: "Parsons et al. (2012)" should be Parsons et al. 2012a, as defined above.
+[Response] Changed the citation
+
+22) P6: "due to their spatial and spectral (chromatic) structure, contaminate the received signal" I'm not really clear on why this structure is specifically called out. The structure is more relevant for how to distinguish foregrounds from emission.
+[TBD] 
+
+23) P6: The discussion of characterizing foregrounds in this paragraph seems out of place. It reads more like something that belongs in the introduction
+24) P8: "its Fourier transform" -> "its delay transform"
+25) P8: "Nyquist sampled over" -> "contains"
+26) footnote 22 belongs earlier in the paper
+27) I suggest a geometric figure illustrated the correspondence between delay and sky to go along with P8.
+28) P9: "transverse direction" define what it is transverse to
+29) P9: cite Parsons et al 2012b for "horizon delay limits"
+30) P9: the "EoR window" as defined in this paper, is tailored to the MWA specifically here, but the EoR window exists as a concept applied to many telescopes. Maybe clarify that this is an MWA-specific EoR window.
+
+Section 3:
+31) Would like to see an explanation of what the data are to be used for.
+32) P1: Should cite Tingay et al. 2013 and Lonsdale et al 2009 for descriptions of the instrument.
+33) P1: Is there an appropriate citation for the beam model?
+34) S3.1 mixes discussion of real and simulated data. Would like to see these discussed separately.
+35) P3: The Tsys = 95 K statement is incorrect. Perhaps the receiver temperature is meant?
+36) "In our work, we have chosen a Tsys that matches the thermal noise observed in the data." Perhaps this could be quantified?
+37) S3.2 is there a paper that can be cited for the MWA observing strategy?
+38) last P of S3.2: sidereal time should be given in hours and minutes only, without minus signs.
+39) S3.3 How is the flux scale set?
+40) S3.4 over what bandwidth is the delay transform taken? What is the center fequency?
+41) Would like to see wedge plots done with |V|^2 put in mK^2 [h Mpc]^3 units
+42) Would like to see a comparison of the MWA wedge with the PAPER wedge presented in Pober et al. 2013.
+43) "This is shown later to be", please direct the reader to where.
+44) "Consequently, the contamination into the EoR window is also higher" please explain how this is done. This depends strongly on how steeply foreground emission rolls off outside of the wedge.
+45) "Emission in the zenith pointing is more..." I don't follow this sentence. I think it is describing the orientation of the primary beam, and if so, perhaps the appropriate figure to be referenced to help clarify.
+
+Section 4: 
+46) Figure 3: Should clarify that even though the beam is phased off-zenith, the delay spectrum is still phased to zenith.
+47) Figure 3: As mentioned before, please use mK^2 [h^-1 Mpc]^3 units
+48) Figure 4: what are the units? Power?
+49) S4.2 "a point also supported by Pober et al ..." Is there an appropriate LOFAR reference in support of this as well?
+50) "to avoid any artifacts from sampling this map" What artifacts are you referring to? Why is it necessary to deviate from the GSM?
+51) S4.2.2 "known to be devoid of" do you mean devoid, or just that it is missing some?
+52) S4.2.2 0^\circ.85 mixing decimal and arcmin within this paragraph. please use only deg, arcmin, arc sec.
+53) S4.2.2 "we select point sources whose deconvolved major axes are equal to 0" please indicate what this implies, and why you chose these criteria.
+54) "an all-sky foreground model consisting of both compact and diffuse emission", all-sky might be an overstatement, since neither of these catalogs cover the entire sky. This may be the first place in the text that "compact" is used to mean point-source. Is there a reason not to use "point source"? Compact does quite capture what is meant.
+55) S4.3 "the fractional error in the delay spectrum" in what aspect of the delay spectrum? The amplitude?
+56) A lot of effort is spent quantifying the expected difference between simulations and models (and it is large!), but then you say "Our primary objective is to explore ... the foreground wedge". I would suggest saying that earlier and maybe explain why it is necessary to quantify the amplitude discrepancy between data and simulation, if indeed it is necessary.
+
+Section 5:
+57) "The resulting sky emission is anisotropic" this probably doesn't warrant saying.
+58) "Baseline Orientation" it would be helpful to have a better motivation for the cuts you make in baseline orientation.
+59) What is meant by "in any observing mode that tracks the object"? What object?
+60) I would like to see an exploration of simulated wedges with a few different beam patterns, particularly a flat (unity) one.
+61) 5.1.1 "The signature is absent in the zenith pointing (bottom panel, Figure 8)". I'm not sure it is absent. I see some structure along the negative horizon delay.
+62) 5.1.2 Should probably mention "resolving" structure earlier in the paper, and how that works for an interferometer.
+63) 5.1.3 "In the wide-field observations of the MWA" it is unnecessary to restrict this statement to just the MWA
+64) 5.1.3 I think it might be a good idea to project the MWA beam into delay space and see how that structure compares to what you observe in your simulations.
+65) The errors described in S5.3 and illustrated in Fig 10 seem distracting. Is the purpose of this paper to quantify the absolute levels of foreground contamination, or is it to describe the relative occupancy (the shape) of foreground contamination? If the latter, than perhaps the errors associated with the uncertainty in spectral index could be dropped?
+66) I would like to see more discussion of whether the pitchfork is or is not present in Pober et al. 2013.
+67) "we predict the presence of a three-pronged pitchfork", as above, are we really sure that this shape generalizes across instrument? Can you provide more evidence that it does?
+
+Section 6:
+68) "the spillover caused by the instrument's transfer function"... this statement is not supported by anything mentioned so far. Please support.
+69) "These can be weighted appropriately during data analysis", should perhaps discuss inverse covariance weighting and how these simulations could inform that for optimal weighting. This is mentioned briefly at the end of this section, but that could be elaborated on.
+70) You mention a threshold of baseline lengths at 30m. What motivates this specific length? How sharply does the effect appear on short baselines?
+71) "the latter limit is achieved wit ha mere 5% loss" this is an MWA-specific statement and should be qualified as such.
+
+Section 7:
+72) "Simulating in all important respects the response of the MWA" this is a bold statement. Perhaps temper it?
+
