@@ -1,3 +1,12 @@
+from fd002ce (tag ApJ1.0_r0.1):
+==============================
+
+In ms.tex, 
+
+(*) restructured section 2
+(*) Moved description of Tsys to section 4.1 under instrument model
+(*) Made minor changes addressing referee comments
+
 from 6c334db (tag ApJ1.0):
 =========================
 
