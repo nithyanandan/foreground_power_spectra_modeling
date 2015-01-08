@@ -247,7 +247,7 @@ Section 5:
 [TBD] Our objective is two-fold. One is to show our simulations match the data reasonably. Our error estimates are used to define what is reasonable and we confirm indeed they are reasonably matched. After that point, our objective is to describe the foreground features in the wedge. Figure 10 is also intended to serve as a prediction that with longer integration, thermal noise floor in the figure also lowers and thus the pitchfork features should become more obvious in data. The text and caption describing figure 10 has been re-worded to place lesser emphasis on the uncertainty.
 
 66) I would like to see more discussion of whether the pitchfork is or is not present in Pober et al. 2013.
-[TBD] 
+[Response] We believe it is present but at levels lower than that of the Galactic plane. But it is unclear from Pober et al 2013 to be able to quantify what part of it comes from the non-Galactic plane diffuse emission. We have added a paragraph in S5.1.3 to discuss a similar feature seen in Pober et al 2013 and Thyagarajan et al 2013. 
 
 67) "we predict the presence of a three-pronged pitchfork", as above, are we really sure that this shape generalizes across instrument? Can you provide more evidence that it does?
 [TBD]

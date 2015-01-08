@@ -1,3 +1,10 @@
+from ca4bd47 (tag ApJ1.0_r0.2):
+==============================
+
+In ms.tex,
+
+(*) Added a discussion on possible pitchfork effect found in Pober et al 2013 and Thyagarajan et al 2013.
+
 from fd002ce (tag ApJ1.0_r0.1):
 ==============================
 
