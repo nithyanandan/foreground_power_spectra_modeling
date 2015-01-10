@@ -1,9 +1,23 @@
+from 5245997 (tag ApJ1.0_r0.3):
+==============================
+
+In eor.bib,
+
+(*) Added reference to Sutinjo et al.(2014) arXiv paper on beam models
+
+In ms.tex,
+
+(*) Modified baseline screening technique as providing inputs to covariance
+based power estimation techniques of Liu et al 2014a, 2014b.
+(*) Updated reference to Sutinjo et al.(2014)
+
 from ca4bd47 (tag ApJ1.0_r0.2):
 ==============================
 
 In ms.tex,
 
-(*) Added a discussion on possible pitchfork effect found in Pober et al 2013 and Thyagarajan et al 2013.
+(*) Added a discussion on possible pitchfork effect found in Pober et al 2013
+and Thyagarajan et al 2013.
 
 from fd002ce (tag ApJ1.0_r0.1):
 ==============================

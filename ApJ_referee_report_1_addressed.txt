@@ -76,7 +76,7 @@ Section 1:
 [Response] changed "obfuscate" to "obscure"
 
 11) "a new method for minimizing" looking ahead a bit, down weighting contaminated modes is encompassed in the inverse covariance weighting suggested in, e.g. Liu et al 2014a and 2014b. Might want to put the presented approach in that context.
-[TBD]
+[Response] Added a couple of sentences at the end of S6 to indicate that covariances estimated between delay transform bins can be naturally fed into the covariance weighted scheme of Liu et al 2014a, 2014b. See also response to #69.
 
 Section 2:
 
@@ -145,7 +145,7 @@ Section 3:
 [Response] Have cited Tingay et al. 2013, Lonsdale et al 2009, and Bowman et al 2013 at the first mention of the MWA in the introduction.
 
 33) P1: Is there an appropriate citation for the beam model?
-[TBD] 
+[Response] Sutinjo et al.(2014) is the appropriate reference for beam model used for MWA. It is cited in S4.1 under instrument model. 
 
 34) S3.1 mixes discussion of real and simulated data. Would like to see these discussed separately.
 [Response] S3.1 is mostly related to MWA parameters. The only reference to simulations comes in the specification of Tsys. Moved paragraph on Tsys to section 4.1 under instrument model. Also see responses to #35 and #36.
@@ -257,7 +257,7 @@ Section 6:
 [Response] The instrumental spectral transfer function refers to the response of the instrumental bandpass shape as a convolution in delay transform equation. We have mentioned this to have been discussed in Parsons et al 2012b and Thyagarajan 2013 in section 2 while describing the Fourier space coordinates. Modified text in a few places to emphasize that the transfer function we are emphasizing is in the spectral direction and not the one due to the primary beam although we take into account the full nature of this transfer function.
 
 69) "These can be weighted appropriately during data analysis", should perhaps discuss inverse covariance weighting and how these simulations could inform that for optimal weighting. This is mentioned briefly at the end of this section, but that could be elaborated on.
-[TBD] 
+[Response] Added a couple of sentences at the end of S6 to indicate that covariances estimated between delay transform bins can be naturally fed into the covariance weighted scheme of Liu et al 2014a, 2014b. Also related to #11.
 
 70) You mention a threshold of baseline lengths at 30m. What motivates this specific length? How sharply does the effect appear on short baselines?
 [Response] Removal of baselines longer than 30m has no further effect on foreground contamination. The plot with stars joined by solid line in Figure 13 shows how the foreground contamination is mitigated progressively as eastward baselines are discarded from short ones to long ones. We have added a sentence stating our motivation for the choice of 30 m. It must be emphasized that we do not mean all baselines < 30m are discarded. Only the eastward baselines of lengths < 30m are discarded.
