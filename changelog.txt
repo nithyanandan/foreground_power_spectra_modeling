@@ -1,3 +1,11 @@
+from 01f683a:
+============
+
+In ms.tex,
+
+(*) New section on role of antenna shapes partially complete
+(*) Minor changes
+
 from 6423041 (tag ApJ1.0_r0.4):
 ==============================
 
