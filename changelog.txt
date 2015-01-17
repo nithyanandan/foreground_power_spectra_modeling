@@ -1,3 +1,16 @@
+from 6423041 (tag ApJ1.0_r0.4):
+==============================
+
+In ms.tex,
+
+(*) Changed variable P' to P_d to denote power spectrum from delay spectrum
+(*) Changed figure file names from f*.eps to fig*.eps which now use units of 
+power instead of delay spectrum units.
+(*) Some figures have been modified for reasons mentioned above.
+
+Added a few additional figures fig14, fig15a, and fig15b to the repository
+and will be incorporated in the next revisions.
+
 from 5245997 (tag ApJ1.0_r0.3):
 ==============================
 
