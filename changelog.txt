@@ -1,3 +1,11 @@
+from 3a0a68a:
+============
+
+In ms.tex,
+
+(*) Partially complete section on role of antenna shapes completed
+(*) Minor changes
+
 from 01f683a:
 ============
 
