@@ -64,7 +64,7 @@ Section 1:
 [Response] Re-worded the sentence.
 
 7) P6: "conservative foreground strategy that has been developed" cite examples of application of these techniques
-[TBD] 
+[Response] Cited Parsons et al. 2014 as an example 
 
 8) P7: "the individual baseline-based approach" Parsons et al 2012b "A Per-Baseline..." is the appropriate reference here 
 [Response] Changed the citations.
@@ -105,7 +105,7 @@ Section 2:
 [Response] We agree this is tricky indeed. Our intention is not to work with a single baseline but with thousands of them fairly densely packed. So the equations must be viewed as being used on these array of baselines which therefore fill the aperture plane fairly well. 
 
 20) P4: would like to see P(k) treated in mK^2 units throughout the paper and use the correct constants rather than say P(k) \propto |V|^2
-[TBD] 
+[Response] P(k) is now given in units of K^2 (Mpc/h)^3 throughout the paper 
 
 21) P5: "Parsons et al. (2012)" should be Parsons et al. 2012a, as defined above.
 [Response] Changed the citation
@@ -139,13 +139,13 @@ Section 2:
 
 Section 3:
 31) Would like to see an explanation of what the data are to be used for.
-[TBD] 
+[Response] The overall sceintific objectives of the MWA EoR observations are specified in a new paragraph under S3.2 
 
 32) P1: Should cite Tingay et al. 2013 and Lonsdale et al 2009 for descriptions of the instrument.
-[Response] Have cited Tingay et al. 2013, Lonsdale et al 2009, and Bowman et al 2013 at the first mention of the MWA in the introduction.
+[Response] Already cited Tingay et al. 2013, Lonsdale et al 2009, and Bowman et al 2013 at the first mention of the MWA in the introduction.
 
 33) P1: Is there an appropriate citation for the beam model?
-[Response] Sutinjo et al.(2014) is the appropriate reference for beam model used for MWA. It is cited in S4.1 under instrument model. 
+[Response] Sutinjo et al.(2014) is the appropriate reference for beam model used for MWA. It is cited in S4.1 under instrument model. We however use a simpler model -- an array of isotropic elements.
 
 34) S3.1 mixes discussion of real and simulated data. Would like to see these discussed separately.
 [Response] S3.1 is mostly related to MWA parameters. The only reference to simulations comes in the specification of Tsys. Moved paragraph on Tsys to section 4.1 under instrument model. Also see responses to #35 and #36.
@@ -157,7 +157,7 @@ Section 3:
 [Response] Towards the end of section 4.1 under "instrument model", we quantify how Tsys is estimated from the data. Essentially, thermal noise is computed from Fourier space well outside the foreground wedge whereby the foregrounds are robustly filtered out.
 
 37) S3.2 is there a paper that can be cited for the MWA observing strategy?
-[TBD] 
+[Response] There isn't a paper yet on MWA observing strategy, only a proposal to the MWA TAC. 
 
 38) last P of S3.2: sidereal time should be given in hours and minutes only, without minus signs.
 [Response] Changed as suggested.
@@ -169,10 +169,10 @@ Section 3:
 [Response] Bandwidth is now specified as 30.72 MHz under MWA instrument description in section 3.1
 
 41) Would like to see wedge plots done with |V|^2 put in mK^2 [h Mpc]^3 units
-[TBD] 
+[Response] Wedge plots are now in units of K^2 (Mpc/h)^3
 
 42) Would like to see a comparison of the MWA wedge with the PAPER wedge presented in Pober et al. 2013.
-[TBD] 
+[Response] We discuss Pober et al. (2013) in the context of emission in delay bin close to the horizon limit. See also response #66. A more detailed discussion is made difficult by the fact that the antenna elements are different. Hence, quantitative comparisons will not be straightforward. 
 
 43) "This is shown later to be", please direct the reader to where.
 [Response] Now we refer to Section 5.1 where this feature is discussed 
@@ -189,13 +189,13 @@ Section 4:
 [Response] Clarified as suggested in the figure caption.
 
 47) Figure 3: As mentioned before, please use mK^2 [h^-1 Mpc]^3 units
-[TBD]
+[Response] Changed units to K^2 (Mpc/h)^3
 
 48) Figure 4: what are the units? Power?
 [Response] The power pattern is unitless
 
 49) S4.2 "a point also supported by Pober et al ..." Is there an appropriate LOFAR reference in support of this as well?
-[Response] We are not aware of LOFAR papers that emphasize effect of foregrounds from outside of primary beam
+[Response] We are not aware of LOFAR papers that emphasize effect of foregrounds from outside of primary beam on the power spectrum. We did find Yatawatta et al.(2013) discuss subtracting bright sources far away from primary field of view (only out to about 30 degrees away) but that is from the point of view of imaging, whereas Pober et al.(2015) (in prep.) directly addresses the effect on the power spectrum.
 
 50) "to avoid any artifacts from sampling this map" What artifacts are you referring to? Why is it necessary to deviate from the GSM?
 [Response] We are referring to artifacts from undersampling. In this process or anywhere else, we do not deviate from the GSM. 
@@ -229,28 +229,28 @@ Section 5:
 [Response] replaced "object" with "pointing center"
 
 60) I would like to see an exploration of simulated wedges with a few different beam patterns, particularly a flat (unity) one.
-[TBD] 
+[Response] A new section "Role of Antenna Geometry" has been added which discusses the effect different antenna beam patterns can have on delay spectrum. 
 
 61) 5.1.1 "The signature is absent in the zenith pointing (bottom panel, Figure 8)". I'm not sure it is absent. I see some structure along the negative horizon delay.
 [Response] Yes, there is a faint branch along the negative horizon delay but we are referring to the bright branch which is specifically due to the Galactic center. Qualified the sentence with "bright signature" being absent.
 
 62) 5.1.2 Should probably mention "resolving" structure earlier in the paper, and how that works for an interferometer.
-[TBD] Added a sentence to indicate the shortening makes it sensitive to diffuse emission.
+[Response] Added a couple of sentences at the beginning of S5.1.2 to indicate the Fourier relationship means larger scale diffuse emission is measured only on shorter baselines. 
 
 63) 5.1.3 "In the wide-field observations of the MWA" it is unnecessary to restrict this statement to just the MWA
 [Response] Modified it to be a generic statement as suggested.
 
 64) 5.1.3 I think it might be a good idea to project the MWA beam into delay space and see how that structure compares to what you observe in your simulations.
-[TBD] 
+[Response] We discuss this under the new section "Role of Antenna Geometry". We find that the delay spectrum of only the beam pattern looks very similar to that from diffuse emission. 
 
 65) The errors described in S5.3 and illustrated in Fig 10 seem distracting. Is the purpose of this paper to quantify the absolute levels of foreground contamination, or is it to describe the relative occupancy (the shape) of foreground contamination? If the latter, than perhaps the errors associated with the uncertainty in spectral index could be dropped?
-[TBD] Our objective is two-fold. One is to show our simulations match the data reasonably. Our error estimates are used to define what is reasonable and we confirm indeed they are reasonably matched. After that point, our objective is to describe the foreground features in the wedge. Figure 10 is also intended to serve as a prediction that with longer integration, thermal noise floor in the figure also lowers and thus the pitchfork features should become more obvious in data. The text and caption describing figure 10 has been re-worded to place lesser emphasis on the uncertainty.
+[Response] Our objective is two-fold. One is to show our simulations match the data reasonably. Our error estimates are used to define what is considered reasonable and we confirm indeed they are reasonably matched. After that point, our objective is to describe the foreground features in the wedge. Figure 10 is also intended to serve as a prediction that with longer integration, thermal noise floor in the figure also lowers and thus the pitchfork features should become more obvious in data. The text and caption describing figure 10 has been re-worded to place lesser emphasis on the uncertainty.
 
 66) I would like to see more discussion of whether the pitchfork is or is not present in Pober et al. 2013.
 [Response] We believe it is present but at levels lower than that of the Galactic plane. But it is unclear from Pober et al 2013 to be able to quantify what part of it comes from the non-Galactic plane diffuse emission. We have added a paragraph in S5.1.3 to discuss a similar feature seen in Pober et al 2013 and Thyagarajan et al 2013. 
 
 67) "we predict the presence of a three-pronged pitchfork", as above, are we really sure that this shape generalizes across instrument? Can you provide more evidence that it does?
-[TBD]
+[Response] The new section "Role of Antenna Geometry" shows delay spectra for different antenna shapes, namely, dipole, phased array, and dish and show that the pitchfork mechanism is indeed generic to all wide-field measurements. The precise amplitude of the pitchfork, of course, depends on the antenna beam properties.
 
 Section 6:
 68) "the spillover caused by the instrument's transfer function"... this statement is not supported by anything mentioned so far. Please support.

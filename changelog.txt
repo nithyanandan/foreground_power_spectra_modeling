@@ -1,3 +1,16 @@
+from db8b24e:
+============
+
+In ms.tex,
+
+(*) Added a paragraph describing MWA EoR observations
+(*) Cited Parsons et al 2014 for example of foreground avoidance
+(*) Minor changes in abstract and throughout the paper
+
+In ApJ_referee_report_1_addressed.txt,
+
+(*) Addressed most of the questions in the referee report
+
 from 3a0a68a:
 ============
 
