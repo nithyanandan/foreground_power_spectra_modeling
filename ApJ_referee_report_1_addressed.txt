@@ -163,7 +163,7 @@ Section 3:
 [Response] Changed as suggested.
 
 39) S3.3 How is the flux scale set?
-[TBD] 
+[Response] Calibration is done with ~2500 sources in the MWACS catalog whose flux scale was set by 3C32 
 
 40) S3.4 over what bandwidth is the delay transform taken? What is the center fequency?
 [Response] Bandwidth is now specified as 30.72 MHz under MWA instrument description in section 3.1
@@ -172,7 +172,7 @@ Section 3:
 [Response] Wedge plots are now in units of K^2 (Mpc/h)^3
 
 42) Would like to see a comparison of the MWA wedge with the PAPER wedge presented in Pober et al. 2013.
-[Response] We discuss Pober et al. (2013) in the context of emission in delay bin close to the horizon limit. See also response #66. A more detailed discussion is made difficult by the fact that the antenna elements are different. Hence, quantitative comparisons will not be straightforward. 
+[Response] We discuss Pober et al. (2013) in the context of emission in delay bin close to the horizon limit termed as "edge brightening". See also response #66. A more detailed discussion is made difficult by the fact that the antenna elements are different. Hence, quantitative comparisons will not be straightforward. 
 
 43) "This is shown later to be", please direct the reader to where.
 [Response] Now we refer to Section 5.1 where this feature is discussed 
@@ -195,7 +195,7 @@ Section 4:
 [Response] The power pattern is unitless
 
 49) S4.2 "a point also supported by Pober et al ..." Is there an appropriate LOFAR reference in support of this as well?
-[Response] We are not aware of LOFAR papers that emphasize effect of foregrounds from outside of primary beam on the power spectrum. We did find Yatawatta et al.(2013) discuss subtracting bright sources far away from primary field of view (only out to about 30 degrees away) but that is from the point of view of imaging, whereas Pober et al.(2015) (in prep.) directly addresses the effect on the power spectrum.
+[Response] We are not aware of LOFAR papers that emphasize effect of foregrounds from outside of primary beam on the power spectrum. We did find Yatawatta et al.(2013) discuss subtracting bright sources far away from primary field of view (only out to about 30 degrees away) but that is from the point of view of imaging, whereas Pober et al.(2015) (in prep.) specifically addresses the effect on the power spectrum.
 
 50) "to avoid any artifacts from sampling this map" What artifacts are you referring to? Why is it necessary to deviate from the GSM?
 [Response] We are referring to artifacts from undersampling. In this process or anywhere else, we do not deviate from the GSM. 

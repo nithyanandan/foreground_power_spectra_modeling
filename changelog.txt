@@ -1,3 +1,15 @@
+from 7676f32:
+============
+
+In ms.tex,
+
+(*) Change first sentence in S7.1 motivating the simulation of uniformly
+illuminated sky
+
+In ApJ_referee_report_1_addressed.txt,
+
+(*) Address flux scale question in the referee report
+
 from db8b24e:
 ============
 
