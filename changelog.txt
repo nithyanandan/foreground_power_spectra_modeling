@@ -1,3 +1,10 @@
+from b364a72:
+============
+
+In ms.tex,
+
+(*) Shorten a sentence in the summary on baseline screening
+
 from 7676f32:
 ============
 
