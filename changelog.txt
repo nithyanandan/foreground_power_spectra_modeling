@@ -1,3 +1,14 @@
+from 572244e:
+============
+
+In eor.bib,
+
+(*) Update Bernardi et al. 2014 to Bernardi et al. 2015
+
+In ms.tex,
+
+(*) Update Bernardi et al. 2014 to Bernardi et al. 2015
+
 from 837b478:
 ============
 
