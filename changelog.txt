@@ -1,3 +1,19 @@
+from 837b478:
+============
+
+In ms.tex,
+
+(*) Add a new figure (figure 1) and renamed all subsequent figure
+file names. The new figure illustrates radio interferometer delays 
+and sign conventions used in the paper. Address one of the
+referee's comments
+
+In ApJ_referee_report_1_addressed.txt,
+
+(*) Address comment to add a new figure illustrating radio 
+interferometer delays along with coordinate systems and sign 
+conventions used
+
 from b364a72:
 ============
 

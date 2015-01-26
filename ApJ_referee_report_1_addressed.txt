@@ -126,7 +126,7 @@ Section 2:
 [Response] Removed this footnote because the term lag is not used in this paper
 
 27) I suggest a geometric figure illustrated the correspondence between delay and sky to go along with P8.
-[TBD] 
+[Response] Added a new figure (now figure 1) that illustrates the radio interferometer delays and sign conventions used in the paper. 
 
 28) P9: "transverse direction" define what it is transverse to
 [Response] Defined as lying on the tangent plane to the celestial sphere
@@ -186,13 +186,13 @@ Section 3:
 Section 4: 
 
 46) Figure 3: Should clarify that even though the beam is phased off-zenith, the delay spectrum is still phased to zenith.
-[Response] Clarified as suggested in the figure caption.
+[Response] Clarified as suggested in the figure caption (now figure 4).
 
 47) Figure 3: As mentioned before, please use mK^2 [h^-1 Mpc]^3 units
-[Response] Changed units to K^2 (Mpc/h)^3
+[Response] Changed units to K^2 (Mpc/h)^3 (now figure 4)
 
 48) Figure 4: what are the units? Power?
-[Response] The power pattern is unitless
+[Response] The power pattern is unitless (now figure 5)
 
 49) S4.2 "a point also supported by Pober et al ..." Is there an appropriate LOFAR reference in support of this as well?
 [Response] We are not aware of LOFAR papers that emphasize effect of foregrounds from outside of primary beam on the power spectrum. We did find Yatawatta et al.(2013) discuss subtracting bright sources far away from primary field of view (only out to about 30 degrees away) but that is from the point of view of imaging, whereas Pober et al.(2015) (in prep.) specifically addresses the effect on the power spectrum.
@@ -232,7 +232,7 @@ Section 5:
 [Response] A new section "Role of Antenna Geometry" has been added which discusses the effect different antenna beam patterns can have on delay spectrum. 
 
 61) 5.1.1 "The signature is absent in the zenith pointing (bottom panel, Figure 8)". I'm not sure it is absent. I see some structure along the negative horizon delay.
-[Response] Yes, there is a faint branch along the negative horizon delay but we are referring to the bright branch which is specifically due to the Galactic center. Qualified the sentence with "bright signature" being absent.
+[Response] Yes, there is a faint branch along the negative horizon delay but we are referring to the bright branch which is specifically due to the Galactic center. Qualified the sentence with "bright signature" being absent. This is now figure 9.
 
 62) 5.1.2 Should probably mention "resolving" structure earlier in the paper, and how that works for an interferometer.
 [Response] Added a couple of sentences at the beginning of S5.1.2 to indicate the Fourier relationship means larger scale diffuse emission is measured only on shorter baselines. 
@@ -244,7 +244,7 @@ Section 5:
 [Response] We discuss this under the new section "Role of Antenna Geometry". We find that the delay spectrum of only the beam pattern looks very similar to that from diffuse emission. 
 
 65) The errors described in S5.3 and illustrated in Fig 10 seem distracting. Is the purpose of this paper to quantify the absolute levels of foreground contamination, or is it to describe the relative occupancy (the shape) of foreground contamination? If the latter, than perhaps the errors associated with the uncertainty in spectral index could be dropped?
-[Response] Our objective is two-fold. One is to show our simulations match the data reasonably. Our error estimates are used to define what is considered reasonable and we confirm indeed they are reasonably matched. After that point, our objective is to describe the foreground features in the wedge. Figure 10 is also intended to serve as a prediction that with longer integration, thermal noise floor in the figure also lowers and thus the pitchfork features should become more obvious in data. The text and caption describing figure 10 has been re-worded to place lesser emphasis on the uncertainty.
+[Response] Our objective is two-fold. One is to show our simulations match the data reasonably. Our error estimates are used to define what is considered reasonable and we confirm indeed they are reasonably matched. After that point, our objective is to describe the foreground features in the wedge. Figure 10 (now figure 11) is also intended to serve as a prediction that with longer integration, thermal noise floor in the figure also lowers and thus the pitchfork features should become more obvious in data. The text and caption describing figure 10 (now figure 11) has been re-worded to place lesser emphasis on the uncertainty.
 
 66) I would like to see more discussion of whether the pitchfork is or is not present in Pober et al. 2013.
 [Response] We believe it is present but at levels lower than that of the Galactic plane. But it is unclear from Pober et al 2013 to be able to quantify what part of it comes from the non-Galactic plane diffuse emission. We have added a paragraph in S5.1.3 to discuss a similar feature seen in Pober et al 2013 and Thyagarajan et al 2013. 
@@ -260,7 +260,7 @@ Section 6:
 [Response] Added a couple of sentences at the end of S6 to indicate that covariances estimated between delay transform bins can be naturally fed into the covariance weighted scheme of Liu et al 2014a, 2014b. Also related to #11.
 
 70) You mention a threshold of baseline lengths at 30m. What motivates this specific length? How sharply does the effect appear on short baselines?
-[Response] Removal of baselines longer than 30m has no further effect on foreground contamination. The plot with stars joined by solid line in Figure 13 shows how the foreground contamination is mitigated progressively as eastward baselines are discarded from short ones to long ones. We have added a sentence stating our motivation for the choice of 30 m. It must be emphasized that we do not mean all baselines < 30m are discarded. Only the eastward baselines of lengths < 30m are discarded.
+[Response] Removal of baselines longer than 30m has no further effect on foreground contamination. The plot with stars joined by solid line in Figure 13 (now figure 14) shows how the foreground contamination is mitigated progressively as eastward baselines are discarded from short ones to long ones. We have added a sentence stating our motivation for the choice of 30 m. It must be emphasized that we do not mean all baselines < 30m are discarded. Only the eastward baselines of lengths < 30m are discarded.
 
 71) "the latter limit is achieved with a mere 5% loss" this is an MWA-specific statement and should be qualified as such. 
 [Response] Modified as suggested in the text at the end of section 6 "Applications". Also modified the conclusions to make it a generic statement that such a technique "potentially mitigate foregrounds significantly".
