@@ -1,3 +1,11 @@
+from 139fc7b:
+============
+
+In ms.tex,
+
+(*) Add paragraph in S7.1 to explain wide-field interferometers are 
+sensitive to a uniformly sky
+
 from 572244e:
 ============
 

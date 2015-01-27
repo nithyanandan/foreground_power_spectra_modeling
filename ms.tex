@@ -596,6 +596,8 @@ In principle, instead of discarding selected antenna spacings altogether, we cou
 
  % In the following discussion, we assume there are no random delay fluctuations in the MWA tile beamforming process. The model power pattern so obtained is different from the one we used earlier, but the former still serves as a good reference (Figure~\ref{fig:power_pattern}) for the present discussion. Hence, we do not plot the new power pattern model obtained with ideal beamforming. 
 
+Na\"{i}vely, only single element antennas are sensitive to a uniform brightness distribution while interferometers are not. However, an examination of equation~\ref{eqn:obsvis} shows it resembles a Fourier transform when the sky brightness is expressed in a coordinate system of direction cosines \citep{tay99,tho01}. In such a framework, the solid angle subtended by a unit interval in direction cosine increases as the secant of the angle away from zenith, which is significant in wide--field measurements. A uniformly illuminated sky does not appear so in this frame. Therefore, a uniformly illuminated sky will excite wide--field interferometers.
+
 Figure~\ref{fig:noiseless-usm-delay-spectrum} shows the delay power spectra of such a sky model with the model power pattern of an ideal MWA tile. Although not identical, these delay power spectra closely resemble those obtained with the diffuse sky model (see Figure~\ref{fig:noiseless-dsm-delay-spectrum}). This indicates that the delay power spectra seen from diffuse foregrounds is primarily explained by those of the underlying power pattern, with any additional variations arising out of anisotropic deviations of the diffuse foreground model from a uniformly illuminated sky}.
 
 \begin{figure}[htb]
