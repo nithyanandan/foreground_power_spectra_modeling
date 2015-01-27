@@ -1,3 +1,9 @@
+from 12a740f:
+============
+
+Update Fourier space figure (figure 2, fig2.eps) to have accurate axis 
+labels and ticks
+
 from 139fc7b:
 ============
 
