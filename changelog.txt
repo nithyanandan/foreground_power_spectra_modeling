@@ -1,3 +1,10 @@
+from ea7f9f8:
+============
+
+In ms.tex,
+
+(*) Modify abstract for alternate version
+
 from 13ccbd7:
 ============
 
