@@ -240,7 +240,7 @@ Interferometer array data known as {\it visibilities}, $V_{bf}\equiv V_{bf}(\bol
 \begin{align}\label{eqn:obsvis}
   V_{bf} &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_f\,e^{-i2\pi f\frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}}\,\dif\Omega,
 \end{align}
-where, $c$ is the speed of light, and $\dif\Omega$ is the solid angle element to which $\hat{\boldsymbol{s}}$ is the unit normal vector. We wish to {\bf note} that this equation is valid {\bf even for wide--field measurements where the sky cannot be approximated to be flat}.
+where, $c$ is the speed of light, and $\dif\Omega$ is the solid angle element to which $\hat{\boldsymbol{s}}$ is the unit normal vector. We wish to {\bf note} that this equation is valid {\bf in general, including wide--field measurements}.
 
 {\bf The {\it delay spectrum}, $V_{b\tau}\equiv V_{b\tau}(\boldsymbol{b},\tau)$, is defined as} the inverse Fourier transform of $V_{bf}$ along the frequency coordinate:
 \begin{align}\label{eqn:delay-transform}
@@ -296,7 +296,8 @@ Note that since {\it visibility} is a complex quantity, its {\bf delay} transfor
 \begin{figure}[htb]
 \centering
 % \includegraphics[width=\linewidth]{delay_cartoon.eps}
-\includegraphics[width=\linewidth]{fig1.eps}
+% \includegraphics[width=\linewidth]{fig1.eps}
+\includegraphics[width=\linewidth]{figure1.eps}
 \caption{{\bf Illustration of radio interferometer delays and conventions used in this paper. Two antennas labeled as A$_1$ and A$_2$ are separated by vector $\boldsymbol{b}$ on the local tangent plane. The local meridian, local north and local east are shown for reference. Points labeled as `z', `n', `s', `e' and `w' on the celestial sphere denote zenith, northward, southward, eastward and westward positions, respectively. $\tau_\textrm{z}$, $\tau_\textrm{n}$, $\tau_\textrm{s}$, $\tau_\textrm{e}$ and $\tau_\textrm{w}$ denote the respective delays measured between A$_1$ and A$_2$. Throughout this paper, zenith is chosen as the phase center. Hence, $\tau_\textrm{z}\equiv 0$. If $\boldsymbol{b}$ is oriented eastward as shown, then $\tau_\textrm{e} > 0$, $\tau_\textrm{w} < 0$, and $\tau_\textrm{n}=\tau_\textrm{s}=0$. Conversely, if $\boldsymbol{b}$ is oriented northward (not shown here), then $\tau_\textrm{n} > 0$, $\tau_\textrm{s} < 0$, and $\tau_\textrm{e}=\tau_\textrm{w}=0$}. \label{fig:delay-cartoon}}
 \end{figure}
 
@@ -308,11 +309,12 @@ In the context of EoR studies in Fourier space, the H{\sc i} power spectrum from
 \centering
 % \includegraphics[width=\linewidth]{figures/v1_0/fourier_space_185.0_MHz_30.7_MHz.eps}
 % \includegraphics[width=\linewidth]{f1.eps}
-\includegraphics[width=\linewidth]{fig2.eps}
+% \includegraphics[width=\linewidth]{fig2.eps}
+\includegraphics[width=\linewidth]{figure2.eps}
 \caption{Fourier space in which delay (and power) spectra of EoR H{\sc i} signals are presented. The $x$--axis is denoted by $|\boldsymbol{b}|$ (antenna spacing) or $k_\perp$ (transverse wavenumber). The $y$--axis denoted by $\tau$ (delay) or $k_\parallel$ (line--of--sight wavenumber). Here, $k_\perp$ and $k_\parallel$ are obtained for a frequency of 185~MHz. The dark shaded region is referred to as the {\it foreground wedge} where smooth spectrum foregrounds reside. Its boundaries (solid lines), given by light travel time for corresponding antenna spacings, are referred to as horizon delay limits. Regions excluding the {\it wedge} and narrow extensions of the {\it wedge} (white unshaded strips) caused by convolution with the {\bf instrument's spectral transfer function} are expected to be relatively free of foreground contamination. Due to an undesirable grating pattern (dot--dashed lines) of the instrument used in this study, namely the MWA, we conservatively identify a restricted region of high EoR sensitivity (medium shade) and refer to it as the {\it EoR window} in this paper. \label{fig:fourier-space}}
 \end{figure}
 
-In our present study, we use a latitude (-26.701\arcdeg) and an antenna layout identical to that of the MWA \citep{bea12}. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
+In our present study, we use a latitude of -26.701\arcdeg and an antenna layout identical to that of the MWA \citep{bea12}. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
 
 \section{Wide--Field Measurements}\label{sec:wide-field}
 
@@ -345,7 +347,7 @@ We conclude these are generic to all instruments making wide--field measurements
 
 \section{Simulations}\label{sec:sim}
 
-We describe the instrumental and foreground models we use in our simulations. 
+We choose an observing frequency of 185~MHz ($z\simeq 6.68$) and a flat passband of width $\Delta B = 30.72$~MHz to roughly match those of ongoing MWA EoR observations. Now we describe the foreground and instrumental models used in our simulations. 
 
 \subsection{Foreground Model}\label{sec:foreground}
 
@@ -363,13 +365,42 @@ We use a combination of the NRAO VLA Sky Survey \citep[NVSS;][]{con98} at 1.4~GH
 
 From the SUMSS catalog, we select objects whose deconvolved major axes are equal to 0\arcsec, thereby strictly selecting point sources. From the NVSS catalog, we excluded objects that overlap with those in the SUMSS survey footprint. Point sources from NVSS were selected if the convolved major axes were not greater than $\approx 47$\arcsec, which matches the angular resolution of the survey. Using a mean spectral index of $\langle\alpha_\textrm{sp}\rangle=-0.83$ (flux density, $S(f)\propto f^{\alpha_\textrm{sp}}$) obtained by \citet{mau03} for both NVSS and SUMSS catalog objects, we calculate the corresponding flux densities at 185~MHz, $S_{185}$. From this subset, we choose point sources with $S_{185}\geq 10$~Jy. The selection of such bright point sources is not affected by minor differences in flux density sensitivity of the two surveys. We verified that our selection criteria ensure a similar areal density of objects in the two surveys. 
 
-Based on these criteria, we selected 100 objects from the SUMSS catalog and 250 objects from the NVSS catalog. Together with the diffuse foreground model, we obtain an all--sky foreground model consisting of both compact and diffuse emission. Figure~\ref{fig:sky-model-generic} shows the diffuse (top) and compact (bottom) foreground emission model used in our study. In this snapshot at 0.09~hours LST, the Galactic center in the diffuse model appears to have just set in the West. 
+Based on these criteria, we select 100 objects from the SUMSS catalog and 250 objects from the NVSS catalog. Together with the diffuse foreground model, we obtain an all--sky foreground model consisting of both compact and diffuse emission. Figure~\ref{fig:sky-model-generic} shows the diffuse (top) and compact (bottom) foreground emission model used in our study. In this snapshot at 0.09~hours LST, the Galactic center in the diffuse model appears to have just set in the West. 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=\linewidth]{figure4.eps}
 \caption{Foreground model at 185~MHz consisting of diffuse emission (top) and bright point sources (bottom) visible during a snapshot at 0.09~hours LST. In the diffuse model, the Galactic center appears to have just set in the West. \label{fig:sky-model-generic}}
 \end{figure}
+
+\subsection{Instrument Model}\label{sec:instrument_model}
+
+The instrument model consists primarily of the antenna power pattern, $A(\hat{\boldsymbol{s}},f)$ (see equation~\ref{eqn:obsvis}). It is determined by the shape of its aperture. Through the use of a few examples, we examine the role the geometrical shape of the aperture plays in shaping the characteristics of delay power spectrum. We consider the following antenna elements placed at the MWA tile locations:
+\begin{itemize}
+\item {\it Dipole}: An East--West dipole of length 0.74~m at a height 0.3~m above a ground plane. $A_\textrm{e}=(\lambda/2)^2$.
+\item {\it Phased Array}: A 4$\times$4 array of isotropic radiators with a grid spacing of 1.1~m at a height 0.3~m above the ground plane placed in an arrangement similar to that in an MWA tile. $A_\textrm{e}=16\,(\lambda/2)^2$. 
+\item {\it Dish}: Diameter of 14~m similar to that proposed for HERA, with $A_\textrm{e}\approx 154$~m$^2$. The power pattern is simulated using an {\it Airy} pattern where its sensitivity beyond the horizon is forced to zero.
+\end{itemize}
+
+The power patterns of these antenna geometries at 185~MHz for the {\it zenith} pointing are shown in Figure~\ref{fig:power-patterns}. It must be noted that the presence of a ground plane below the dipole and the phased array introduces a smoother suppression of sensitivity near the horizon, whereas this transition is abrupt in the case of the dish.
+
+\begin{figure*}[htb]
+\centering
+\subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{figure5a.eps}} \\
+\subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{figure5b.eps}}
+\caption{Power patterns (top panels) and simulated delay power spectra (bottom panels) for different antenna shapes at 185~MHz centered on zenith. Antenna shapes used are: dipole (left), phased array (middle), and dish (right). Refer to text for details. The strength and occupancy of the power patterns are correlated with those of delay power spectra. The {\it foreground wedge} and the {\it EoR window} are most severely contaminated in the case of the dipole while it is the least for the dish. The phased array has intermediate levels of contamination. Foreground power close to the horizon delay limits in all three cases are significant even on long baselines. The foreshortening of baselines towards the horizon makes them sensitive to foreground emission on large size scales. The amplitude of this feature is highest for the dipole and least for the dish and hence, strongly depends on the shape of the antenna element.}
+\label{fig:aperture-shapes}
+\end{figure*}
+
+The delay power spectra for these antenna shapes are shown in Figure~\ref{fig:antennas-delay-spectra}. The occupancy of the power patterns on the sky is clearly correlated with that in the delay spectra. The following visual correlations are also apparent --- the strength of the primary lobe centered on the pointing center is correlated with the delay power spectrum centered on $\tau=0$; and, the overall rate of decrease in the power sensitivity away from the pointing center is correlated with the rate of drop in power away from $\tau=0$. 
+
+The levels of foreground contamination in the {\it EoR window} varies substantially across the different antenna shapes: $\sim 10^4\,$K$^2\,$(Mpc/$h$)$^3$, $\lesssim 10^2\,$K$^2\,$(Mpc/$h$)$^3$, and $<1\,$K$^2\,$(Mpc/$h$)$^3$ while using a dipole, phased array, and a dish, respectively. The severity of foreground contamination inside the {\it foreground wedge} both in strength and occupancy also evidently decreases as the antenna element is changed from a dipole to a phased array to a dish. For instance, notice that the foreground contamination in $k$--modes between the $k_\parallel=0$ and the horizon limits decreases from $\sim 10^5$~K$^2\,$(Mpc/$h$)$^3$ in a phased array to $\sim 10$~K$^2\,$(Mpc/$h$)$^3$ in a dish. As a consequence, $k$--modes in the {\it foreground wedge} that may be deemed too contaminated for EoR studies in the case of a dipole or a phased array can potentially become accessible when using a dish.
+
+Finally, a distinct feature common to all these aperture shapes is that the foreground contamination near the horizon delay limits even on wide antenna spacings is significant ($\gtrsim 10^5$~K$^2$(Mpc/$h$)$^3$). We have argued this arises due to wide--field effects. 
+
+The prevalence of this feature across different antenna shapes demonstrates it is generic to all wide--field measurements, especially in EoR experiments. The amplitude of this effect, however, can be controlled via choice of antenna shape and through weighting of aperture illumination. A dish--shaped antenna appears to hold a significant advantage over a dipole or a phased array from the viewpoint of foreground contamination. 
+
+Typically, the sensitivity of antennas to the primary field of view is high compared to the rest of regions on the sky. Combined with the wide--field effects seen earlier, it leads to a ``pitchfork''--shaped signature inside the {\it foreground wedge}, as exemplified in the case of a dish. Although the exact appearance of this signature depends on antenna the power pattern, we use the term ``pitchfork'', hereafter, to broadly refer to the combination of foreground power in the primary field of view and the enhancement of foreground power near the horizon limits due to the nature of wide--field measurements.
 
 \section{Example Data}\label{sec:data}
 
@@ -678,13 +709,13 @@ Branches of foreground power seen at $\tau>0$ and close to the negative horizon 
 
 The power patterns of these antenna geometries at 185~MHz for the {\it zenith} pointing are shown in Figure~\ref{fig:power-patterns}. It must be noted that the presence of a ground plane below the dipole and the phased array introduces a smoother suppression of sensitivity near the horizon, whereas this transition is abrupt in the case of the dish}. 
 
-\begin{figure*}[htb]
-\centering
-\subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{fig16a.eps}} \\
-\subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{fig16b.eps}}
-\caption{Power patterns (top panels) and simulated delay power spectra (bottom panels) for different antenna shapes at 185~MHz centered on zenith. Antenna shapes used are: dipole (left), phased array (middle), and dish (right). Refer to text for details. The strength and occupancy of the power patterns are correlated with those of delay power spectra. The {\it foreground wedge} and the {\it EoR window} are most severely contaminated in the case of the dipole while it is the least for the dish. The phased array has intermediate levels of contamination. Foreground power close to the horizon delay limits in all three cases are significant even on long baselines. The foreshortening of baselines towards the horizon makes them sensitive to foreground emission on large size scales. The amplitude of this feature is highest for the dipole and least for the dish and hence, strongly depends on the shape of the antenna element.}
-\label{fig:aperture-shapes}
-\end{figure*}
+% \begin{figure*}[htb]
+% \centering
+% \subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{fig16a.eps}} \\
+% \subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{fig16b.eps}}
+% \caption{Power patterns (top panels) and simulated delay power spectra (bottom panels) for different antenna shapes at 185~MHz centered on zenith. Antenna shapes used are: dipole (left), phased array (middle), and dish (right). Refer to text for details. The strength and occupancy of the power patterns are correlated with those of delay power spectra. The {\it foreground wedge} and the {\it EoR window} are most severely contaminated in the case of the dipole while it is the least for the dish. The phased array has intermediate levels of contamination. Foreground power close to the horizon delay limits in all three cases are significant even on long baselines. The foreshortening of baselines towards the horizon makes them sensitive to foreground emission on large size scales. The amplitude of this feature is highest for the dipole and least for the dish and hence, strongly depends on the shape of the antenna element.}
+% \label{fig:aperture-shapes}
+% \end{figure*}
 
 {\bf The delay power spectra for these antenna shapes are shown in Figure~\ref{fig:antennas-delay-spectra}. The occupancy of the power patterns in the sky hemisphere is clearly correlated with that in the delay spectra. The following visual correlations are also apparent --- the strength of the primary lobe centered on the pointing center is correlated with the delay power spectrum centered on $\tau=0$; and, the overall rate of decrease in the power sensitivity away from the pointing center is correlated with the rate of drop in power away from $\tau=0$. 
 
