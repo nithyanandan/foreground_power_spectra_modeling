@@ -1,4 +1,12 @@
-from 06e98c3:
+from a805428:
+============
+
+In ms.tex,
+
+(*) Add interpretation to wide-field effects under section "Wide-field
+measurements"
+
+from 06e98c3 (now a805428 after ammended commit):
 ============
 
 (*) Bring figure3.eps under git version control as it was not done in
@@ -11,7 +19,7 @@ from 28c0fe9:
 
 In ms.tex,
 
-(*) Add figure showing wide-field effects under section "Wide-feild
+(*) Add figure showing wide-field effects under section "Wide-field
 measurements"
 
 from cfc6578:
