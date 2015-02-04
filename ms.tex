@@ -312,7 +312,7 @@ In the context of EoR studies in Fourier space, the H{\sc i} power spectrum from
 \caption{Fourier space in which delay (and power) spectra of EoR H{\sc i} signals are presented. The $x$--axis is denoted by $|\boldsymbol{b}|$ (antenna spacing) or $k_\perp$ (transverse wavenumber). The $y$--axis denoted by $\tau$ (delay) or $k_\parallel$ (line--of--sight wavenumber). Here, $k_\perp$ and $k_\parallel$ are obtained for a frequency of 185~MHz. The dark shaded region is referred to as the {\it foreground wedge} where smooth spectrum foregrounds reside. Its boundaries (solid lines), given by light travel time for corresponding antenna spacings, are referred to as horizon delay limits. Regions excluding the {\it wedge} and narrow extensions of the {\it wedge} (white unshaded strips) caused by convolution with the {\bf instrument's spectral transfer function} are expected to be relatively free of foreground contamination. Due to an undesirable grating pattern (dot--dashed lines) of the instrument used in this study, namely the MWA, we conservatively identify a restricted region of high EoR sensitivity (medium shade) and refer to it as the {\it EoR window} in this paper. \label{fig:fourier-space}}
 \end{figure}
 
-In our present study, we use an antenna layout identical to that of the MWA \citep{bea12}. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
+In our present study, we use a latitude (-26.701\arcdeg) and an antenna layout identical to that of the MWA \citep{bea12}. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
 
 \section{Wide--Field Measurements}\label{sec:wide-field}
 
@@ -344,6 +344,32 @@ We interpret this is due to equal--sized delay bins subtending larger solid angl
 We conclude these are generic to all instruments making wide--field measurements. The nature of the specific instrument used for observing will control the amplitude of these effects, which we explore below. % Typically, the foreground sky consists of diffuse emission and point-like sources, and the antenna is more sensitive to power received from primary field of view than from the rest of the sky. 
 
 \section{Simulations}\label{sec:sim}
+
+We describe the instrumental and foreground models we use in our simulations. 
+
+\subsection{Foreground Model}\label{sec:foreground}
+
+In wide--field measurements, it is important to consider an all--sky model for foreground objects in evaluating the features seen in the power spectrum instead of restricting only to the primary field of view. We use a foreground model that includes both diffuse and bright compact components.  
+
+\subsubsection{Diffuse Foreground Model}\label{sec:DSM}
+
+For the diffuse component, we use an all--sky radio foreground model \citep{deo08} to estimate the emission at 185~MHz. At this frequency, since this map is predominantly based on the 408~MHz map of \citet{has82} which has an angular resolution of 0.85\arcdeg, we smoothed the 185~MHz map to the same resolution. However, to avoid any artifacts from sampling this map, we sample it at $\approx 27$\arcmin~intervals. We model the diffuse foreground spectra with a spectral index at each pixel in the map, estimated from model maps at 170~MHz and 200~MHz.
+
+\subsubsection{Compact Foreground Model}\label{sec:CSM}
+
+The model described in the preceding section is primarily a model of the diffuse foreground sky. While it contains faint compact emission blended in with the diffuse emission, {\bf bright point sources have been removed \citep{deo08}}. In order to supplement it with missing bright compact emission, we use classical radio source confusion estimates to determine the nominal flux density threshold and include point sources brighter than this threshold. It may be noted that slightly different criteria are in common use in radio astronomy to estimate radio source confusion \citep[see Appendix of][and references therein]{thy13}. For an angular resolution of 0.85\arcdeg, using a conservative `$S_\textrm{c}=5\sigma_\textrm{c}$' criterion, we determine the flux density threshold to be $\approx 10$~Jy. Other liberal criteria that yield a lower threshold carry a greater risk of double--counting point sources which might be already blended in with the diffuse sky model. 
+
+We use a combination of the NRAO VLA Sky Survey \citep[NVSS;][]{con98} at 1.4~GHz and the Sydney University Molonglo Sky Survey \citep[SUMSS;][]{boc99,mau03} at 843~MHz to provide our point source catalog due to their complementary survey footprints covering the entire sky, and matched flux density sensitivity and angular resolution. The SUMSS catalog covers the sky with declination $\delta < -30\arcdeg$~ with a limiting peak brightness of 6--10~mJy/beam and an angular resolution of $\sim 45$\arcsec. The NVSS covers the sky with $\delta > -40\arcdeg$~ with a similar angular resolution and a limiting flux density of $\approx 2.5$~mJy for point sources. 
+
+From the SUMSS catalog, we select objects whose deconvolved major axes are equal to 0\arcsec, thereby strictly selecting point sources. From the NVSS catalog, we excluded objects that overlap with those in the SUMSS survey footprint. Point sources from NVSS were selected if the convolved major axes were not greater than $\approx 47$\arcsec, which matches the angular resolution of the survey. Using a mean spectral index of $\langle\alpha_\textrm{sp}\rangle=-0.83$ (flux density, $S(f)\propto f^{\alpha_\textrm{sp}}$) obtained by \citet{mau03} for both NVSS and SUMSS catalog objects, we calculate the corresponding flux densities at 185~MHz, $S_{185}$. From this subset, we choose point sources with $S_{185}\geq 10$~Jy. The selection of such bright point sources is not affected by minor differences in flux density sensitivity of the two surveys. We verified that our selection criteria ensure a similar areal density of objects in the two surveys. 
+
+Based on these criteria, we selected 100 objects from the SUMSS catalog and 250 objects from the NVSS catalog. Together with the diffuse foreground model, we obtain an all--sky foreground model consisting of both compact and diffuse emission. Figure~\ref{fig:sky-model-generic} shows the diffuse (top) and compact (bottom) foreground emission model used in our study. In this snapshot at 0.09~hours LST, the Galactic center in the diffuse model appears to have just set in the West. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\linewidth]{figure4.eps}
+\caption{Foreground model at 185~MHz consisting of diffuse emission (top) and bright point sources (bottom) visible during a snapshot at 0.09~hours LST. In the diffuse model, the Galactic center appears to have just set in the West. \label{fig:sky-model-generic}}
+\end{figure}
 
 \section{Example Data}\label{sec:data}
 
