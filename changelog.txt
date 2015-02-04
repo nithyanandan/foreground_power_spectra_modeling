@@ -1,3 +1,11 @@
+from cfc6578:
+============
+
+In ms.tex,
+
+(*) Add a new section "Wide-field measurements"
+(*) Need to add a figure showing wide-field effects
+
 from ea7f9f8:
 ============
 
