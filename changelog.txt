@@ -1,3 +1,19 @@
+from 06e98c3:
+============
+
+(*) Bring figure3.eps under git version control as it was not done in
+the previous commit
+
+from 28c0fe9:
+============
+
+(*) Bring figure3.eps under git version control
+
+In ms.tex,
+
+(*) Add figure showing wide-field effects under section "Wide-feild
+measurements"
+
 from cfc6578:
 ============
 
