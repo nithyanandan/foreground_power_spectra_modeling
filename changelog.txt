@@ -1,3 +1,14 @@
+from 379e27b:
+============
+
+In ms.tex,
+
+(*) Make small changes to end of section 2
+(*) Make small changes to caption of figure 2
+(*) Remove reference to Fourier space figure as being specific to MWA
+(*) Now sections 2, 3, and 4 are more or less compatible with the 
+alternate outline
+
 from f851ac1:
 ============
 
