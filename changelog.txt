@@ -1,3 +1,12 @@
+from 48d0c33:
+============
+
+Add figure6a.eps, figure6b.eps to git version control
+
+In ms.tex,
+
+(*) Start rewriting section 5
+
 from 379e27b:
 ============
 
