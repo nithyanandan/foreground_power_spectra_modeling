@@ -1,3 +1,11 @@
+from c202e24:
+============
+
+In ms.tex,
+
+(*) Complete section 6 on baseline screening technique
+(*) Remove earlier section 7 on role of antenna geometry
+
 from a4e4df6:
 ============
 
@@ -9,7 +17,7 @@ In ms.tex,
 (*) Write subsection on foreground signature analysis under S5
 (*) Complete section 5 now consisting of the entire MWA data, modeling,
 comparison and foreground analysis including the "pitchfork" section
-(*) Remove section "Results"
+(*) Remove section "Results" 
 
 from 8d355ca:
 ============
