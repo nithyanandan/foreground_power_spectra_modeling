@@ -1,3 +1,13 @@
+from 8d355ca:
+============
+
+(*) Update figure5a.eps, figure5b.eps. 
+(*) Add figure7.eps to git version control
+
+In ms.tex,
+
+(*) Continue editing section 5
+
 from 48d0c33:
 ============
 

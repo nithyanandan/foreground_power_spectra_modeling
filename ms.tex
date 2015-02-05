@@ -442,17 +442,17 @@ We obtain the delay spectrum of these calibrated visibilities by taking the dela
 
 % In subsequent sections, we plot the amplitude of the delay spectrum, $|V_{b\tau}|$, sorted by baseline length, $|\boldsymbol{b}|$. Note that visibilities from different baselines have not been averaged together in this analysis. 
 
-Figure~\ref{fig:fhd_data} shows {\bf delay power spectra} from MWA data after deconvolution along the delay axis. The principal feature is the {\it foreground wedge}, whose boundaries, marked by white lines, increase linearly with light travel time proportional to baseline length. Note that the wedge is not filled out uniformly. Each baseline has a different orientation that determines the response to different objects in the sky. It is this variation that we will explore below. 
+% Figure~\ref{fig:fhd_data} shows {\bf delay power spectra} from MWA data after deconvolution along the delay axis. The principal feature is the {\it foreground wedge}, whose boundaries, marked by white lines, increase linearly with light travel time proportional to baseline length. Note that the wedge is not filled out uniformly. Each baseline has a different orientation that determines the response to different objects in the sky. It is this variation that we will explore below. 
 
 The {\it off--zenith} pointing {\bf has notably higher power in the {\it foreground wedge} than in the {\it zenith} pointing}. This is shown later in \S\ref{sec:diffuse} to be due to response of the array to the bright Galactic center and Galactic plane in the westward sky. Consequently, the contamination into the {\it EoR window} is also higher, especially on short antenna spacings. Emission in the {\it zenith} pointing is more centrally concentrated {\bf due to a zenith--centered power pattern and faster suppression of response away from zenith}, whereas the {\it off--zenith} pointing has a power pattern phased eastward of zenith and is also more responsive to emission farther away from the primary lobe relative to that in the {\it zenith} pointing. {\bf The power pattern is discussed in detail in \S\ref{sec:instrument_model}}.
 
-\begin{figure}[htb]
-\centering
-% \includegraphics[width=\linewidth]{figures/v1_0/multi_baseline_fhd_delay_spectrum_snapshots.eps}
-% \includegraphics[width=\linewidth]{f3.eps}
-\includegraphics[width=\linewidth]{fig4.eps}
-\caption{{\bf Delay power spectra} of two observations of the EoR field (RA = 0$^\textrm{h}$, Dec = $-30\arcdeg$) at an {\it off--zenith} pointing (top) when tiles have significant secondary lobes in the direction of the Galactic center and a {\it zenith} pointing (bottom) where secondary lobes are minimal and the Galaxy has set. {\bf In both cases, the delay spectra are phased to the zenith and thus the {\it foreground wedge} boundaries are symmetric around $\tau=0$}. For reference, the $k$--space equivalent of $\tau$ and $|\boldsymbol{b}|$, namely, $k_\parallel$ and $k_\perp$ are shown at the axes on the right and top respectively. White lines mark the boundaries of {\it foreground wedge} determined by light travel time across each baseline. Smooth spectrum objects predominantly reside in this {\it foreground wedge}. The logarithmic color scale (shown at the right) is common to both panels. \label{fig:fhd_data}}
-\end{figure}
+% \begin{figure}[htb]
+% \centering
+% % \includegraphics[width=\linewidth]{figures/v1_0/multi_baseline_fhd_delay_spectrum_snapshots.eps}
+% % \includegraphics[width=\linewidth]{f3.eps}
+% \includegraphics[width=\linewidth]{fig4.eps}
+% \caption{{\bf Delay power spectra} of two observations of the EoR field (RA = 0$^\textrm{h}$, Dec = $-30\arcdeg$) at an {\it off--zenith} pointing (top) when tiles have significant secondary lobes in the direction of the Galactic center and a {\it zenith} pointing (bottom) where secondary lobes are minimal and the Galaxy has set. {\bf In both cases, the delay spectra are phased to the zenith and thus the {\it foreground wedge} boundaries are symmetric around $\tau=0$}. For reference, the $k$--space equivalent of $\tau$ and $|\boldsymbol{b}|$, namely, $k_\parallel$ and $k_\perp$ are shown at the axes on the right and top respectively. White lines mark the boundaries of {\it foreground wedge} determined by light travel time across each baseline. Smooth spectrum objects predominantly reside in this {\it foreground wedge}. The logarithmic color scale (shown at the right) is common to both panels. \label{fig:fhd_data}}
+% \end{figure}
 
 \subsection{Modeling}\label{sec:modeling}
 
@@ -479,15 +479,13 @@ where, $\Delta f = 80$~kHz, $\Delta t = 112$~s, and $N_\textrm{ch}=\Delta B/\Del
 
 \subsection{Comparison with Data}\label{sec:data-vs-model}
 
-With the aforementioned foreground model, and instrumental and observational parameters, we simulate visibilities using equation~\ref{eqn:obsvis}. Figure~\ref{fig:sim_data} shows the {\bf delay power spectra} from {\it off--zenith} and {\it zenith} pointings. Notice the qualitative agreement of amplitude and structure with those obtained from data shown in Figure~\ref{fig:fhd_data}. The Galactic center and the Galactic plane visible in the {\it off--zenith} pointing make it appear brighter in the {\it foreground wedge}. 
+With the aforementioned foreground model, and instrumental and observational parameters, we simulate visibilities using equation~\ref{eqn:obsvis}. Figure~\ref{fig:fhd-sim-comparison} shows the {\bf delay power spectra} from {\it off--zenith} and {\it zenith} pointings obtained from MWA observations and modeling. Notice the qualitative agreement of amplitude and structure between the two. The Galactic center and the Galactic plane visible in the {\it off--zenith} pointing make it appear brighter in the {\it foreground wedge} as a branch with $\tau<0$. 
 
-\begin{figure}[htb]
+\begin{figure*}[htb]
 \centering
-% \includegraphics[width=\linewidth]{figures/v1_0/multi_baseline_sim_delay_spectrum_snapshots.eps}
-% \includegraphics[width=\linewidth]{f7.eps}
-\includegraphics[width=\linewidth]{fig8.eps}
-\caption{Same as Figure~\ref{fig:fhd_data}, but generated from simulated visibilities using the model described in \S\ref{sec:modeling}. Note the similarity between the broad features to those in Figure~\ref{fig:fhd_data}. \label{fig:sim_data}}
-\end{figure}
+\includegraphics[width=\linewidth]{figure7.eps}
+\caption{Delay power spectra from MWA data (left) and modeling (right) for the {\it off--zenith} (top) and {\it zenith} (bottom) pointings. The modeling matches the data to a level consistent with the uncertainties in foreground models and the antenna beam. \label{fig:fhd-sim-comparison}}
+\end{figure*}
 
 In order to make a quantitative comparison of delay spectra obtained with MWA data and our simulations, we consider the uncertainty in the assumed spectral index of our foreground model. Our foreground models are derived from other higher frequency catalogs and sky maps. The inherent spread in spectral index increases the uncertainty while predicting fluxes at the observing frequency. Using simple error propagation, the fractional error in the delay spectrum {\bf amplitude}, $|V_{b\tau}|$, caused by the spread in spectral index is $\sim \ln(f_\textrm{orig}/f)\,\Delta\alpha_\textrm{sp}$, where, $f_\textrm{orig}$ is the original frequency at which the catalog or map was created, $f=185$~MHz is the MWA observing frequency, and $\Delta\alpha_\textrm{sp}$ is the spread (HWHM) in spectral index. From \citet{mau03}, we assume $\Delta\alpha_\textrm{sp} \approx 0.35$ for point sources from NVSS and SUMSS catalogs. Although the model of \citet{deo08} yields a spectral index per direction on the sky, we could assume similar uncertainties exist in spectral indices of our diffuse sky model as well, which is predominantly derived from the 408~MHz map of \citet{has82}. Thus, fractional errors in delay spectrum {\bf amplitudes} from compact and diffuse components are $\sim$70\% and $\sim$30\% respectively. 
 
@@ -495,7 +493,7 @@ In addition to intrinsic model uncertainty, delay spectra from simulations and d
 
 We also simulated delay spectra after assigning spectral indices drawn randomly from a {\it gaussian} distribution with a mean of $\langle\alpha_\textrm{sp}\rangle=-0.83$ and a HWHM of $\Delta\alpha_\textrm{sp}=0.35$ to the point sources in our compact foreground model. These simulations typically yielded a median absolute deviation of $\approx 0.29$ for $\log_{10}\rho$ indicating fractional differences of $\sim$~95\%. This demonstrates that a fractional deviation of $\sim$~90\% observed between data and simulations is in line with expectations when the aforementioned uncertainty in foreground models, thermal noise fluctuations in measurements, and uncertainties in antenna power pattern due to random delay fluctuations are taken into account. Currently, we are primarily limited by the unavailability of all--sky foreground models at the observing frequency of 185~MHz. 
 
-These uncertainties are presented only to confirm the qualitative agreement already seen between Figures~\ref{fig:fhd_data} and \ref{fig:sim_data}. These estimates are conservative. A full treatment of all uncertainties and deviations from ideal behavior such as frequency dependent errors in tile power pattern \citep{ber15}, calibration \citep{dat10}, data corruption due to interference, anisoplanatic wide--field imaging and ionospheric effects \citep{int09} will bring the simulations much closer in agreement with observations, but is beyond the scope of this paper. {\bf Hereafter}, our primary objective is to explore in detail the foreground signatures embedded in the {\it foreground wedge}.
+These uncertainties are presented only to confirm the qualitative agreement already seen between data and modeling in Figure~\ref{fig:fhd-sim-comparison}. These estimates are conservative. A full treatment of all uncertainties and deviations from ideal behavior such as frequency dependent errors in tile power pattern \citep{ber15}, calibration \citep{dat10}, data corruption due to interference, anisoplanatic wide--field imaging and ionospheric effects \citep{int09} will bring the simulations much closer in agreement with observations, but is beyond the scope of this paper. {\bf Hereafter, our focus} is to explore in detail the foreground signatures embedded in the {\it foreground wedge} of the MWA instrument.
 
 \section{Results}\label{sec:delay-spectrum-analysis}
 
