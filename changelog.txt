@@ -1,3 +1,16 @@
+from a4e4df6:
+============
+
+Add figure8.eps, figure9.eps to git version control
+
+In ms.tex,
+
+(*) Make minor changes to captions of figures 5 and 7
+(*) Write subsection on foreground signature analysis under S5
+(*) Complete section 5 now consisting of the entire MWA data, modeling,
+comparison and foreground analysis including the "pitchfork" section
+(*) Remove section "Results"
+
 from 8d355ca:
 ============
 
