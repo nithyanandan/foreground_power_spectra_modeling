@@ -1,3 +1,12 @@
+from 3ed4ca5:
+============
+
+In ms.tex,
+
+(*) Complete summary section
+(*) Add emphasis on wide-field, pitchfork effects
+(*) Add emphasis on effect of antenna shape on pitchfork signature
+
 from c202e24:
 ============
 
