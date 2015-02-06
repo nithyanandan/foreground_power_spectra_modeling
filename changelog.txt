@@ -1,3 +1,11 @@
+from c25e8ca:
+============
+
+In ms.tex,
+
+(*) Move Delay spectrum deconvolution section to end of Delay Spectrum
+section and simplify text to be more general
+
 from 23a1bee:
 ============
 
