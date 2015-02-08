@@ -1,3 +1,22 @@
+from eb548c5:
+============
+
+In ms.tex,
+
+(*) Change title to mention "Fourier delay space" and "Wide-field"
+observatories
+(*) Change abstract slightly to mention "Fourier delay space"
+(*) Change introduction slightly
+(*) Change Delay Spectrum section slightly
+(*) Change Wide-field effects section slightly
+(*) Re-number subsections in Simulations section and change slightly
+(*) Trim "Analysis of Foreground Signatures" section by a few paragraphs 
+and change "MWA Data Modeling" section slightly
+(*) Change title and wording of "Baseline based foreground mitigation"
+section slightly
+(*) Remove commented lines 
+(*) Change figure1 slightly
+
 from c25e8ca:
 ============
 
