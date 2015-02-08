@@ -6,7 +6,7 @@
 %% \documentclass[10pt,manuscript]{aastex}
 
 %% preprint2 produces a double-column, single-spaced document:
-\documentclass[preprint2,iop,numberedappendix]{emulateapj}
+\documentclass[preprint2,iop,numberedappendix,twocolappendix,appendixfloats]{emulateapj}
 %% \documentclass[preprint2,iop]{aastex}
 
 %% \documentclass[preprint2,longabstract]{aastex}
@@ -249,66 +249,36 @@ where, $W'_f\equiv W'_f(f)$ is a spectral weighting function which can be chosen
 \begin{equation}\label{eqn:delay}
   \tau = \frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}.
 \end{equation}
-$V_{b\tau}$ is expressed in observer's units as Jy~Hz.
+The delay transform conventions used in this paper are described in appendix~\ref{sec:delay-conventions}. $V_{b\tau}$ is expressed in observer's units as Jy~Hz. 
 
-\subsection{Resemblance to Spatial Power Spectrum}\label{sec:power-spectrum}
+The delay spectrum has a close resemblance to cosmological H{\sc i} spatial power spectrum. Appendix~\ref{sec:EoR-power-spectrum} gives an overview of the similarities and differences between the two. Foregrounds can be described in either framework. For our study, we find the delay spectrum approach to be simple and yet extremely useful. 
 
-Equation~\ref{eqn:obsvis} can be {\bf equivalently expressed} as:
-\begin{align}\label{eqn:vis}
-  V_{uf} &\equiv V_{uf}(\boldsymbol{u},f) \nonumber\\
-  &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_f\,e^{-i2\pi\boldsymbol{u}\cdot\hat{\boldsymbol{s}}}\,\dif\Omega,
-\end{align}
-where, $\hat{\boldsymbol{s}}$ is measured with reference to a location on the sky referred to as the {\it phase center}, and $\boldsymbol{u}\equiv (u,v,w)$ denotes the spatial frequency vector. $w$ is aligned parallel to the direction of the phase center, while $u$ and $v$ lie on the transverse plane perpendicular to it. For measurements that are constrained to lie on this plane, we can choose $w=0$ without loss of generality and $\boldsymbol{u}$ effectively reduces to $\boldsymbol{u}\equiv (u,v)$, a two--dimensional vector. Then, $\boldsymbol{u}$ is directly related to the transverse spatial wavenumber mode as: 
-\begin{align}\label{eqn:k-perp}
-  \boldsymbol{k}_\perp &\equiv \frac{2\pi\boldsymbol{u}}{D}, 
-\end{align}
-where, $D\equiv D(z)$ is the transverse comoving distance at redshift $z$. 
-
-Since we are concerned with a redshifted H{\sc i} spectral line from cosmological distances, $f$ is a measure of cosmological distance along the line of sight. $\eta$, which is the Fourier transform dual of $f$, is used to denote the spatial frequency along the line of sight and has units of time. It is directly related to the line--of--sight wavenumber, 
-\begin{align}\label{eqn:k-prll}
-  k_\parallel &\approx \frac{2\pi\eta\,f_{21}H_0\,E(z)}{c(1+z)^2}, 
-\end{align}
-where, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, and $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology. This approximation holds under the assumption that the redshift range (or frequency band) is small enough within which cosmological evolution is negligible. Thus,
-\begin{align}\label{eqn:los-transform}
-  V_{u\eta} &\equiv V_{u\eta}(\boldsymbol{u},\eta) \nonumber\\
-  &\equiv \int V_{uf}(\boldsymbol{u},f)\,W'_f\,e^{i2\pi f\eta}\,\dif f
-\end{align}
-represents the true spatial Fourier representation of the three--dimensional sky brightness distribution. This approach has been discussed in detail in \citet{mor04}. The spatial power spectrum of EoR H{\sc i} distribution, $P(\boldsymbol{k}_\perp,k_\parallel)$, and $V_{u\eta}$ are related by \citep{mor04,mcq06,par12a}: 
-\begin{align}\label{eqn:true-power_spectrum}
-  P(\boldsymbol{k}_\perp,k_\parallel) &\simeq |V_{u\eta}|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
-\end{align}
-where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\lambda$ is the wavelength of the band center, and $k_\textrm{B}$ is the Boltzmann constant. Thus, $V_{u\eta}$ inferred from observations, also in units of Jy~Hz, can be converted into an equivalent cosmological H{\sc i} power spectrum $P(\boldsymbol{k}_\perp,k_\parallel)$, in units of K$^2$~Mpc$^3$ or, more generally, K$^2$(Mpc/$h$)$^3$, where $h$ is the Hubble constant factor.
-
-Without loss of generality, the phase center can be assumed to be the zenith relative to the local tangent plane. Then $\boldsymbol{u}$ lies on this plane for measurements constrained to be on it. If the array of antennas are also coplanar lying on the local tangent plane, then $\boldsymbol{u}=\boldsymbol{b}/\lambda$. Under such circumstances, equations~\ref{eqn:obsvis} and \ref{eqn:delay} closely resemble equations~\ref{eqn:vis} and \ref{eqn:los-transform} respectively. However, they are not quite identical to each other. It is because $\boldsymbol{b}$ is independent of frequency while $\boldsymbol{u}$ is not. \citet{par12b} and \citet{liu14a} have discussed the mathematical correspondence between the two. 
-
-Foregrounds can be described in both the delay spectrum and Fourier frameworks. For our study, we find the former to be simple and yet extremely useful. In order to express a quantity derived from $V_{u\eta}$ that has units identical to that of the cosmological H{\sc i} power spectrum, we define the delay power spectrum:
-\begin{align}\label{eqn:fake-power-spectrum}
+In order to express a quantity derived from $V_{b\tau}$ that has units K$^2$(Mpc/$h$)$^3$ which is identical to that of the cosmological H{\sc i} power spectrum, we define the delay power spectrum:
+\begin{align}\label{eqn:delay-power-spectrum}
   P_\textrm{d}(\boldsymbol{k}_\perp,k_\parallel) &\equiv |V_{b\tau}|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
 \end{align}
-where, $\boldsymbol{u}$ and $\eta$ in equations~\ref{eqn:k-perp} and \ref{eqn:k-prll} have been correspondingly replaced with $\boldsymbol{b}/\lambda$ and $\tau$ respectively. 
+with
+\begin{align}
+  \boldsymbol{k}_\perp &\equiv \frac{2\pi(\frac{\boldsymbol{b}}{\lambda})}{D}, \\
+  k_\parallel &\equiv \frac{2\pi\tau\,f_{21}H_0\,E(z)}{c(1+z)^2}, 
+\end{align}
+where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\lambda$ is the wavelength of the band center, $k_\textrm{B}$ is the Boltzmann constant, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, $z$ is the redshift, $D\equiv D(z)$ is the transverse comoving distance, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, and $h$, $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology.
 
-Note that since {\it visibility} is a complex quantity, its {\bf delay} transform {\bf contains} positive and negative delays. Negative and positive delays correspond to the two hemispheres of the sky as transected by the antenna spacing vector. {\bf Figure~\ref{fig:delay-cartoon} illustrates the radio interferometer delays and conventions used in our paper}. $\boldsymbol{b}$ is assumed to be on a coordinate system aligned with the local east, north (along local meridian) and upward (zenith) directions at the telescope site. Hence, a perfectly eastward oriented antenna spacing will observe objects in the eastern and the western skies at positive and negative delays, respectively. Similarly, an object in the northern sky will appear at a positive delay at an antenna spacing oriented northward. For all observations used in this study, we use the zenith as the phase center, {\bf for which $\tau\equiv 0$}. 
-
-\begin{figure}[htb]
-\centering
-% \includegraphics[width=\linewidth]{delay_cartoon.eps}
-% \includegraphics[width=\linewidth]{fig1.eps}
-\includegraphics[width=\linewidth]{figure1.eps}
-\caption{{\bf Illustration of radio interferometer delays and conventions used in this paper. Two antennas labeled as A$_1$ and A$_2$ are separated by vector $\boldsymbol{b}$ on the local tangent plane. The local meridian, local north and local east are shown for reference. Points labeled as `z', `n', `s', `e' and `w' on the celestial sphere denote zenith, northward, southward, eastward and westward positions, respectively. $\tau_\textrm{z}$, $\tau_\textrm{n}$, $\tau_\textrm{s}$, $\tau_\textrm{e}$ and $\tau_\textrm{w}$ denote the respective delays measured between A$_1$ and A$_2$. Throughout this paper, zenith is chosen as the phase center. Hence, $\tau_\textrm{z}\equiv 0$. If $\boldsymbol{b}$ is oriented eastward as shown, then $\tau_\textrm{e} > 0$, $\tau_\textrm{w} < 0$, and $\tau_\textrm{n}=\tau_\textrm{s}=0$. Conversely, if $\boldsymbol{b}$ is oriented northward (not shown here), then $\tau_\textrm{n} > 0$, $\tau_\textrm{s} < 0$, and $\tau_\textrm{e}=\tau_\textrm{w}=0$}. \label{fig:delay-cartoon}}
-\end{figure}
-
-{\bf We give a brief overview of some parameters of Fourier space which is generic to all experiments that use a similar approach}. Figure~\ref{fig:fourier-space} illustrates the Fourier space in which the delay (and power) spectra of H{\sc i} from the EoR are presented in this paper. $|\boldsymbol{b}|$ and $k_\perp$, denoting spatial scales in the transverse direction {\bf (tangent plane to the celestial sphere)}, form the $x$--axis. $\tau\approx\eta\propto k_\parallel$, denoting spatial scales along line--of--sight form the $y$--axis. Foreground emission maps to a wedge--shaped region in Fourier space, hereafter referred to as the {\it foreground wedge} \citep{dat10}, whose boundaries are determined by the antenna spacings and the light travel times across them. These boundaries, called horizon delay limits \citep{ved12,par12b}, are shown by solid lines. The spectral transfer function of the instrument convolves the {\it foreground wedge} and stretches it further (unshaded narrow strips bounded by solid and dashed lines) along $\tau$--axis \citep{par12b,thy13}. The width of this narrow strip is inversely proportional to the operating bandwidth. The region of Fourier space excluding the {\it foreground wedge} and the narrow strips is the so--called {\it EoR window}, shown in light and medium shades. {\bf In the context of EoR studies in Fourier space, the H{\sc i} power spectrum from the EoR is expected to decrease rapidly with $|\boldsymbol{k}|$. Hence, the brightest EoR signal will be observed on the shortest baselines and smallest delays. Thus the region of interest for EoR studies relying on {\it avoidance} strategy is just beyond the horizon delay limits (dashed lines) on short baselines, marked as the region of {\it maximal EoR sensitivity}}. 
-
-{\bf In the specific case of the MWA, which has a passband constructed using coarse channels, there are period grating responses resulting in repetitions of the {\it foreground wedge} at multiples of 0.78~$\mu$s. Thus with reference to the MWA, the {\it EoR window} lies outside the dashed lines but inside the first grating response ($|\tau| \lesssim 0.78\,\mu$s, dot--dashed lines) and is shown in medium shade}.
+{\bf We give a brief overview of some parameters of Fourier space which is generic to all experiments that use a similar approach}. Figure~\ref{fig:fourier-space} illustrates the Fourier space in which the delay (and power) spectra of H{\sc i} from the EoR are presented in this paper. $|\boldsymbol{b}|$ and $k_\perp$, denoting spatial scales in the transverse direction {\bf (tangent plane to the celestial sphere)}, form the $x$--axis. $\tau$ and $k_\parallel$, denoting spatial scales along line--of--sight form the $y$--axis. Foreground emission maps to a wedge--shaped region in Fourier space, hereafter referred to as the {\it foreground wedge} \citep{dat10}, whose boundaries are determined by the antenna spacings and the light travel times across them. These boundaries, called horizon delay limits \citep{ved12,par12b}, are shown by solid lines. 
 
 \begin{figure}[htb]
 \centering
 % \includegraphics[width=\linewidth]{figures/v1_0/fourier_space_185.0_MHz_30.7_MHz.eps}
 % \includegraphics[width=\linewidth]{f1.eps}
 % \includegraphics[width=\linewidth]{fig2.eps}
-\includegraphics[width=\linewidth]{figure2.eps}
+% \includegraphics[width=\linewidth]{figure2.eps}
+\includegraphics[width=\linewidth]{figure1.eps}
 \caption{Fourier space in which delay (and power) spectra of EoR H{\sc i} signals are presented. The $x$--axis is denoted by $|\boldsymbol{b}|$ (antenna spacing) or $k_\perp$ (transverse wavenumber). The $y$--axis denoted by $\tau$ (delay) or $k_\parallel$ (line--of--sight wavenumber). Here, $k_\perp$ and $k_\parallel$ are obtained for a frequency of 185~MHz. The dark shaded region is referred to as the {\it foreground wedge} where smooth spectrum foregrounds reside. Its boundaries (solid lines), given by light travel time for corresponding antenna spacings, are referred to as horizon delay limits. Regions excluding the {\it wedge} and narrow extensions of the {\it wedge} (white unshaded strips) caused by convolution with the {\bf instrument's spectral transfer function} are expected to be relatively free of foreground contamination {\bf and are generally referred to as the {\it EoR window}. There are undesirable grating responses (dot--dashed lines) specific to the MWA. Hence, we conservatively identify a restricted region of high EoR sensitivity (medium shade) and refer to it as the MWA {\it EoR window}}. \label{fig:fourier-space}}
 \end{figure}
+
+The spectral transfer function of the instrument convolves the {\it foreground wedge} and stretches it further (unshaded narrow strips bounded by solid and dashed lines) along $\tau$--axis \citep{par12b,thy13}. The width of this narrow strip is inversely proportional to the operating bandwidth. The region of Fourier space excluding the {\it foreground wedge} and the narrow strips is the so--called {\it EoR window}, shown in light and medium shades. {\bf In the context of EoR studies in Fourier space, the H{\sc i} power spectrum from the EoR is expected to decrease rapidly with $|\boldsymbol{k}|$. Hence, the brightest EoR signal will be observed on the shortest baselines and smallest delays. Thus the region of interest for EoR studies relying on {\it avoidance} strategy is just beyond the horizon delay limits (dashed lines) on short baselines, marked as the region of {\it maximal EoR sensitivity}}. 
+
+{\bf In the specific case of the MWA, which has a passband constructed using coarse channels, there are period grating responses resulting in repetitions of the {\it foreground wedge} at multiples of 0.78~$\mu$s. Thus with reference to the MWA, the {\it EoR window} lies outside the dashed lines but inside the first grating response ($|\tau| \lesssim 0.78\,\mu$s, dot--dashed lines) and is shown in medium shade}.
 
 In our present study, we use a latitude of -26.701\arcdeg and an antenna layout identical to that of the MWA \citep{bea12}. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). {\bf Their deviation from coplanarity is negligible}. For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
 
@@ -335,7 +305,8 @@ Figure~\ref{fig:usm} shows the wide--field delay power spectrum response of a un
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\linewidth]{figure3.eps}
+% \includegraphics[width=\linewidth]{figure3.eps}
+\includegraphics[width=\linewidth]{figure2.eps}
 \caption{Wide--field effects on delay power spectra produced with a uniform sky brightness distribution measured by antenna pairs with a uniform power pattern across the visible hemisphere. The non--zero response of the interferometer array to a uniform brightness distribution and the prominent {\it edge brightening} close to the horizon delay limits are wide--field effects. These are prevalent on all antenna spacings and are generic to all instruments used in wide--field measurements. \label{fig:usm}}
 \end{figure}
 
@@ -369,7 +340,8 @@ These criteria yield 100 objects from the SUMSS catalog and 250 objects from the
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\linewidth]{figure4.eps}
+% \includegraphics[width=\linewidth]{figure4.eps}
+\includegraphics[width=\linewidth]{figure3.eps}
 \caption{Foreground model at 185~MHz consisting of diffuse emission (top) and bright point sources (bottom) visible during a snapshot at 0.09~hours LST. In the diffuse model, the Galactic center appears to have just set in the West. \label{fig:sky-model-generic}}
 \end{figure}
 
@@ -386,8 +358,10 @@ The power patterns of these antenna geometries at 185~MHz for the {\it zenith} p
 
 \begin{figure*}[htb]
 \centering
-\subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{figure5a.eps}} \\
-\subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{figure5b.eps}}
+% \subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{figure5a.eps}} \\
+% \subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{figure5b.eps}}
+\subfloat[][Power patterns]{\label{fig:power-patterns}\includegraphics[width=\linewidth]{figure4a.eps}} \\
+\subfloat[][delay power spectra]{\label{fig:antennas-delay-spectra}\includegraphics[width=\linewidth]{figure4b.eps}}
 \caption{Power patterns (top panels) and simulated delay power spectra (bottom panels) for different antenna shapes at 185~MHz centered on zenith. Antenna shapes used are: dipole (left), phased array (middle), and dish (right). Refer to text for details. The strength and occupancy of the power patterns are correlated with those of delay power spectra. White dotted lines in the delay power spectra mark the boundaries of the {\it foreground wedge} determined by the horizon delay limit and antenna spacing. The {\it foreground wedge} and the {\it EoR window} are most severely contaminated in the case of the dipole while it is the least for the dish. The phased array has intermediate levels of contamination. Foreground power close to the horizon delay limits in all three cases are significant even on long baselines. The foreshortening of baselines towards the horizon makes them sensitive to foreground emission on large size scales. The amplitude of this feature is highest for the dipole and least for the dish and hence, strongly depends on the shape of the antenna element.}
 \label{fig:aperture-shapes}
 \end{figure*}
@@ -432,8 +406,10 @@ We use the model described in \S\ref{sec:foreground} for the foreground sky. Fig
 
 \begin{figure*}[htb]
 \centering
-\subfloat[][Diffuse Sky Model]{\label{fig:DSM}\includegraphics[width=0.45\linewidth]{figure6a.eps}}
-\subfloat[][Bright Point Source Model]{\label{fig:CSM}\includegraphics[width=0.45\linewidth]{figure6b.eps}}
+% \subfloat[][Diffuse Sky Model]{\label{fig:DSM}\includegraphics[width=0.45\linewidth]{figure6a.eps}}
+% \subfloat[][Bright Point Source Model]{\label{fig:CSM}\includegraphics[width=0.45\linewidth]{figure6b.eps}}
+\subfloat[][Diffuse Sky Model]{\label{fig:DSM}\includegraphics[width=0.45\linewidth]{figure5a.eps}}
+\subfloat[][Bright Point Source Model]{\label{fig:CSM}\includegraphics[width=0.45\linewidth]{figure5b.eps}}
 \caption{Sky brightness temperature of the diffuse foreground model (left) and flux densities of bright point sources (right) at 185~MHz visible during {\it off--zenith} (top) and {\it zenith} (bottom) pointings. The color scales are logarithmic. Power pattern contours are overlaid. The contour levels shown are 0.00195, 0.00781, 0.0312, 0.125, and 0.5. The Galactic center and a portion of the Galactic plane are prominently visible during the {\it off--zenith} pointing in the diffuse sky model and the MWA tile power gain is significant ($\gtrsim 12$\%) in that direction. In contrast, emission from the Galactic plane in {\it zenith} pointing is significantly lesser.}
 \label{fig:sky-model-MWA}
 \end{figure*}
@@ -451,7 +427,8 @@ With the aforementioned foreground model, and instrumental and observational par
 
 \begin{figure*}[htb]
 \centering
-\includegraphics[width=\linewidth]{figure7.eps}
+% \includegraphics[width=\linewidth]{figure7.eps}
+\includegraphics[width=\linewidth]{figure6.eps}
 \caption{Delay power spectra from MWA data (left) and modeling (right) for the {\it off--zenith} (top) and {\it zenith} (bottom) pointings. The {\it foreground wedge} is bounded by white dotted lines. Model matches the data to a level consistent with the uncertainties in foreground models and the antenna beam. \label{fig:fhd-sim-comparison}}
 \end{figure*}
 
@@ -471,7 +448,8 @@ Figure~\ref{fig:noiseless-dsm-csm-delay-spectrum} shows the delay power spectra 
 
 \begin{figure*}[htb]
 \centering
-\includegraphics[width=\linewidth]{figure8.eps}
+% \includegraphics[width=\linewidth]{figure8.eps}
+\includegraphics[width=\linewidth]{figure7.eps}
 \caption{Simulated {\bf delay power spectra (in units of K$^2$~(Mpc/$h$)$^3$} for {\it off--zenith} (top) and {\it zenith} (bottom) pointings for the diffuse (left) and compact (right) foreground models without any thermal noise. The axes and color scale are identical to those in Figure~\ref{fig:fhd-sim-comparison}. In the {\it off-zenith} pointing, emission from the Galactic center is the most prominent feature seen as a branch at $\tau<0$. In the {\it zenith} pointing, {\bf delay power spectrum} from diffuse emission has a {\it two--pronged fork}--shaped structure and is present even at wide antenna spacings due to wide--field effects. Compact emission is centrally concentrated. This combination gives rise to a {\it pitchfork} signature in the {\it foreground wedge}. \label{fig:noiseless-dsm-csm-delay-spectrum}}
 \end{figure*}
 
@@ -506,7 +484,8 @@ uncertainty in predicting the spectral index of compact foreground model, while 
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\linewidth]{figure9.eps}
+% \includegraphics[width=\linewidth]{figure9.eps}
+\includegraphics[width=\linewidth]{figure8.eps}
 \caption{Simulated {\bf delay power spectra} for three chosen northward oriented antenna spacings of length: $\sim$84~m ({\it top}), $\sim$104~m ({\it middle}), and $\sim$171~m ({\it bottom}). The baseline length and orientation is specified in each panel. The solid red, cyan, and black lines denote contributions from diffuse, compact, and composite foreground models respectively. Vertical dotted lines mark the horizon delay limits. {\bf Compact emission dominates the central regions of the delay power spectra while both components, especially diffuse emission on short antenna spacings, dominate near the horizon delay limits, giving rise to a {\it pitchfork}--shaped structure. The shaded region denotes the envelope of uncertainty around the composite model delay power spectrum. This uncertainty is dictated by uncertainties in spectral indices of foreground models inside the delay horizon delay limits and by thermal noise fluctuations outside}. \label{fig:pitchfork-baselines}}
 \end{figure}
 
@@ -534,9 +513,12 @@ The Galactic center in the {\it off--zenith} pointing is one such example alread
 % \subfloat[][Sky model]{\label{fig:sky-model}\includegraphics[width=0.33\linewidth]{f11a.eps}}
 % \subfloat[][Delay maps]{\label{fig:delay-map}\includegraphics[width=0.33\linewidth]{f11b.eps}}
 % \subfloat[][Delay Spectra]{\label{fig:baseline-breakup}\includegraphics[width=0.33\linewidth]{f11c.eps}}
-\subfloat[][Sky model]{\label{fig:sky-model}\includegraphics[width=0.33\linewidth]{fig12a.eps}}
-\subfloat[][Delay maps]{\label{fig:delay-map}\includegraphics[width=0.33\linewidth]{fig12b.eps}}
-\subfloat[][Delay Spectra]{\label{fig:baseline-breakup}\includegraphics[width=0.33\linewidth]{fig12c.eps}}
+% \subfloat[][Sky model]{\label{fig:sky-model}\includegraphics[width=0.33\linewidth]{fig12a.eps}}
+% \subfloat[][Delay maps]{\label{fig:delay-map}\includegraphics[width=0.33\linewidth]{fig12b.eps}}
+% \subfloat[][Delay Spectra]{\label{fig:baseline-breakup}\includegraphics[width=0.33\linewidth]{fig12c.eps}}
+\subfloat[][Sky model]{\label{fig:sky-model}\includegraphics[width=0.33\linewidth]{figure9a.eps}}
+\subfloat[][Delay maps]{\label{fig:delay-map}\includegraphics[width=0.33\linewidth]{figure9b.eps}}
+\subfloat[][Delay Spectra]{\label{fig:baseline-breakup}\includegraphics[width=0.33\linewidth]{figure9c.eps}}
 \caption{(a): Sky model showing compact ({\it top}) and diffuse ({\it bottom}) emission (adopted from Figure~\ref{fig:sky-model-MWA}). The Galactic center is very prominent in diffuse emission on the west co--located with a bright secondary lobe of the power pattern. (b): Sky hemisphere mapped to delays observed on antenna spacings with northward ({\it top}) and eastward ({\it bottom}) orientations. Delays vary linearly with antenna spacing length. Color scale shown is for a 100~m antenna spacing. The bright Galactic center will appear at $\tau=0$ in northward antenna spacings and close to negative horizon delay limit on eastward antenna spacings. (c): Simulated delay spectra {\bf power} on antenna spacings oriented northward ({\it top}) and eastward ({\it bottom}). White lines denote horizon delay limits. The bright Galactic center is prominently visible close to negative horizon delay limit, especially on short eastward antenna spacings. These are also the most severely contaminated by foreground spillover. The northward antenna spacings, on the other hand, are the least contaminated.}
 \label{fig:breakup}
 \end{figure*}
@@ -549,7 +531,8 @@ In our example, we discard eastward antenna spacings ($-22.5\arcdeg\le\theta_\te
 \centering
 % \includegraphics[width=\linewidth]{figures/v1_0/baseline_screening_before_after_nside_64_Tsys_95.0K.eps}
 % \includegraphics[width=\linewidth]{f12.eps}
-\includegraphics[width=\linewidth]{fig13.eps}
+% \includegraphics[width=\linewidth]{fig13.eps}
+\includegraphics[width=\linewidth]{figure10.eps}
 \caption{Simulated delay spectra {\bf power} for the {\it off--zenith} pointing with all antenna spacings included ({\it top}) and with short eastward antenna spacings discarded ({\it bottom}). Discarded antenna spacings (black vertical stripes) have lengths $|\boldsymbol{b}|<30$~m (leftward of vertical dashed line) and orientations $|\theta_\textrm{b}|<$~22.5\arcdeg. The spillover from the bright Galactic center near the negative horizon delay limit from the {\it foreground wedge} is lowered by {\bf nearly two orders} of magnitude when short eastward antenna spacings are discarded. \label{fig:before-after}}
 \end{figure}
 
@@ -559,7 +542,8 @@ This screening technique can be generalized to optimize between foreground mitig
 \centering
 % \includegraphics[width=\linewidth]{figures/v1_0/baseline_screening_nside_64_Tsys_95.0K.eps}
 % \includegraphics[width=\linewidth]{f13.eps}
-\includegraphics[width=\linewidth]{fig14.eps}
+% \includegraphics[width=\linewidth]{fig14.eps}
+\includegraphics[width=\linewidth]{figure11.eps}
 \caption{Drop in foreground contamination in the {\it EoR window}, and loss of data for the {\it off--zenith} pointing as a function of discarded baselines. Eastward baselines with varying degrees of directedness -- $|\theta_\textrm{b}|<$~7.5\arcdeg (solid circles), $|\theta_\textrm{b}|<$~15\arcdeg~ (solid squares), and $|\theta_\textrm{b}|<$~22.5\arcdeg (solid stars) -- and lengths $|\boldsymbol{b}| \le |\boldsymbol{b}|_\textrm{max}$ ($x$--axis) are discarded. Loss of data (dotted lines) is measured by discarded baselines as a fraction of the total number for the corresponding cases. Foreground contamination in the {\it EoR window} (solid lines) drops by a factor $\sim$2 ($|\theta_\textrm{b}|\le$~7.5\arcdeg) to $\sim$100 ($|\theta_\textrm{b}|\le$~22.5\arcdeg). The latter limit can be achieved with a mere 5\% loss of data at $|\boldsymbol{b}|_\textrm{max}\simeq30$~m, and discarding longer baselines ($|\boldsymbol{b}|\gtrsim 30$~m) has no effect in further reducing foreground contamination. \label{fig:screening}}
 \end{figure}
 
@@ -586,6 +570,51 @@ We also provide a simple and effective tool based on the delay spectrum techniqu
 \acknowledgments
 
 This work was supported by the U. S. National Science Foundation (NSF) through award AST--1109257. DCJ is supported by an NSF Astronomy and Astrophysics Postdoctoral Fellowship under award AST--1401708. JCP is supported by an NSF Astronomy and Astrophysics Fellowship under award AST-1302774. This work makes use of the Murchison Radio-astronomy Observatory, operated by CSIRO. We acknowledge the Wajarri Yamatji people as the traditional owners of the Observatory site. Support for the MWA comes from the NSF (awards: AST-0457585, PHY-0835713, CAREER-0847753, and AST-0908884), the Australian Research Council (LIEF grants LE0775621 and LE0882938), the U.S. Air Force Office of Scientific Research (grant FA9550-0510247), and the Centre for All-sky Astrophysics (an Australian Research Council Centre of Excellence funded by grant CE110001020). Support is also provided by the Smithsonian Astrophysical Observatory, the MIT School of Science, the Raman Research Institute, the Australian National University, and the Victoria University of Wellington (via grant MED-E1799 from the New Zealand Ministry of Economic Development and an IBM Shared University Research Grant). The Australian Federal government provides additional support via the Commonwealth Scientific and Industrial Research Organisation (CSIRO), National Collaborative Research Infrastructure Strategy, Education Investment Fund, and the Australia India Strategic Research Fund, and Astronomy Australia Limited, under contract to Curtin University. We acknowledge the iVEC Petabyte Data Store, the Initiative in Innovative Computing and the CUDA Center for Excellence sponsored by NVIDIA at Harvard University, and the International Centre for Radio Astronomy Research (ICRAR), a Joint Venture of Curtin University and The University of Western Australia, funded by the Western Australian State government.  
+
+\appendix
+
+\section{Delay Transform Conventions}\label{sec:delay-conventions}
+
+Note that since {\it visibility} in equation~\ref{eqn:obsvis} is a complex quantity, its {\bf delay} transform {\bf contains} positive and negative delays. Negative and positive delays correspond to the two hemispheres of the sky as transected by the antenna spacing vector. {\bf Figure~\ref{fig:delay-cartoon} illustrates the radio interferometer delays and conventions used in our paper}. $\boldsymbol{b}$ is assumed to be on a coordinate system aligned with the local east, north (along local meridian) and upward (zenith) directions at the telescope site. Hence, a perfectly eastward oriented antenna spacing will observe objects in the eastern and the western skies at positive and negative delays, respectively. Similarly, an object in the northern sky will appear at a positive delay at an antenna spacing oriented northward. For all observations used in this study, we use the zenith as the phase center, {\bf for which $\tau\equiv 0$}. 
+
+\begin{figure}[htb]
+\centering
+% \includegraphics[width=\linewidth]{delay_cartoon.eps}
+% \includegraphics[width=\linewidth]{fig1.eps}
+% \includegraphics[width=\linewidth]{figure1.eps}
+\includegraphics[width=\linewidth]{figureA1.eps}
+\caption{{\bf Illustration of radio interferometer delays and conventions used in this paper. Two antennas labeled as A$_1$ and A$_2$ are separated by vector $\boldsymbol{b}$ on the local tangent plane. The local meridian, local north and local east are shown for reference. Points labeled as `z', `n', `s', `e' and `w' on the celestial sphere denote zenith, northward, southward, eastward and westward positions, respectively. $\tau_\textrm{z}$, $\tau_\textrm{n}$, $\tau_\textrm{s}$, $\tau_\textrm{e}$ and $\tau_\textrm{w}$ denote the respective delays measured between A$_1$ and A$_2$. Throughout this paper, zenith is chosen as the phase center. Hence, $\tau_\textrm{z}\equiv 0$. If $\boldsymbol{b}$ is oriented eastward as shown, then $\tau_\textrm{e} > 0$, $\tau_\textrm{w} < 0$, and $\tau_\textrm{n}=\tau_\textrm{s}=0$. Conversely, if $\boldsymbol{b}$ is oriented northward (not shown here), then $\tau_\textrm{n} > 0$, $\tau_\textrm{s} < 0$, and $\tau_\textrm{e}=\tau_\textrm{w}=0$}. \label{fig:delay-cartoon}}
+\end{figure}
+
+\section{Cosmological H{\sc i} Power Spectrum}\label{sec:EoR-power-spectrum}
+
+Equation~\ref{eqn:obsvis} can be {\bf equivalently expressed} as:
+\begin{align}\label{eqn:vis}
+  V_{uf} &\equiv V_{uf}(\boldsymbol{u},f) \nonumber\\
+  &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_f\,e^{-i2\pi\boldsymbol{u}\cdot\hat{\boldsymbol{s}}}\,\dif\Omega,
+\end{align}
+where, $\hat{\boldsymbol{s}}$ is measured with reference to a location on the sky referred to as the {\it phase center}, and $\boldsymbol{u}\equiv (u,v,w)$ denotes the spatial frequency vector. $w$ is aligned parallel to the direction of the phase center, while $u$ and $v$ lie on the transverse plane perpendicular to it. For measurements that are constrained to lie on this plane, we can choose $w=0$ without loss of generality and $\boldsymbol{u}$ effectively reduces to $\boldsymbol{u}\equiv (u,v)$, a two--dimensional vector. Then, $\boldsymbol{u}$ is directly related to the transverse spatial wavenumber mode as: 
+\begin{align}\label{eqn:k-perp}
+  \boldsymbol{k}_\perp &\equiv \frac{2\pi\boldsymbol{u}}{D}, 
+\end{align}
+where, $D\equiv D(z)$ is the transverse comoving distance at redshift $z$. 
+
+Since we are concerned with a redshifted H{\sc i} spectral line from cosmological distances, $f$ is a measure of cosmological distance along the line of sight. $\eta$, which is the Fourier transform dual of $f$, is used to denote the spatial frequency along the line of sight and has units of time. It is directly related to the line--of--sight wavenumber, 
+\begin{align}\label{eqn:k-prll}
+  k_\parallel &\approx \frac{2\pi\eta\,f_{21}H_0\,E(z)}{c(1+z)^2}, 
+\end{align}
+where, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, and $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology. This approximation holds under the assumption that the redshift range (or frequency band) is small enough within which cosmological evolution is negligible. Thus,
+\begin{align}\label{eqn:los-transform}
+  V_{u\eta} &\equiv V_{u\eta}(\boldsymbol{u},\eta) \nonumber\\
+  &\equiv \int V_{uf}(\boldsymbol{u},f)\,W'_f\,e^{i2\pi f\eta}\,\dif f
+\end{align}
+represents the true spatial Fourier representation of the three--dimensional sky brightness distribution. This approach has been discussed in detail in \citet{mor04}. The spatial power spectrum of EoR H{\sc i} distribution, $P(\boldsymbol{k}_\perp,k_\parallel)$, and $V_{u\eta}$ are related by \citep{mor04,mcq06,par12a}: 
+\begin{align}\label{eqn:true-power_spectrum}
+  P(\boldsymbol{k}_\perp,k_\parallel) &\simeq |V_{u\eta}|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
+\end{align}
+where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, $\lambda$ is the wavelength of the band center, and $k_\textrm{B}$ is the Boltzmann constant. Thus, $V_{u\eta}$ inferred from observations, in units of Jy~Hz, can be converted into an equivalent cosmological H{\sc i} power spectrum $P(\boldsymbol{k}_\perp,k_\parallel)$, in units of K$^2$~Mpc$^3$ or, more generally, K$^2$(Mpc/$h$)$^3$, where $h$ is the Hubble constant factor.
+
+Without loss of generality, the phase center can be assumed to be the zenith relative to the local tangent plane. Then $\boldsymbol{u}$ lies on this plane for measurements constrained to be on it. If the array of antennas are also coplanar lying on the local tangent plane, then $\boldsymbol{u}=\boldsymbol{b}/\lambda$. Under such circumstances, equations~\ref{eqn:obsvis} and \ref{eqn:delay} closely resemble equations~\ref{eqn:vis} and \ref{eqn:los-transform} respectively. However, they are not quite identical to each other. It is because $\boldsymbol{b}$ is independent of frequency while $\boldsymbol{u}$ is not. \citet{par12b} and \citet{liu14a} have discussed the mathematical correspondence between the two. 
 
 % \par\bigskip
 \bibliographystyle{apj}

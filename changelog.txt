@@ -1,3 +1,15 @@
+from 79fcddd:
+============
+
+In ms.tex,
+
+(*) Create appendix to describe delay transform conventions
+(*) Create appendix to describe similarities and differences between
+delay spectra and true spatial power spectra
+(*) Adjust Delay transform section accordingly
+
+Rename figures under Git
+
 from eb548c5:
 ============
 
