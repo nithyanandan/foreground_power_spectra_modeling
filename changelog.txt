@@ -1,3 +1,13 @@
+from 3e35322:
+============
+
+In ms.tex,
+
+(*) Change title and last paragraph of Introduction section
+(*) Change wording in Pitchfork subsection slightly
+(*) Change wording slightly in caption to figure on foreground 
+mitigation by baseline screening
+
 from edcebe0:
 ============
 
