@@ -1,3 +1,14 @@
+from edcebe0:
+============
+
+In ms.tex,
+
+(*) Create new subsection Fourier delay space under Delay Spectrum
+section
+(*) Reshuffle a paragraph within th Delay Spectrum section
+(*) Change wording in Delay Spectrum section slightly
+(*) Change wording in subsection Delay Spectrum Deconvolution
+
 from 79fcddd:
 ============
 
