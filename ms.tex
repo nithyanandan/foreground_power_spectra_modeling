@@ -235,27 +235,27 @@ Foregrounds with intrinsic deviations from spectral smoothness, instruments with
 
 \section{Delay Spectrum}\label{sec:delay-spectrum}
 
-Interferometer array data known as {\it visibilities}, $V_{bf}\equiv V_{bf}(\boldsymbol{b},f)$, represent correlations between time--series of electric fields measured by different antenna pairs with separation vectors $\boldsymbol{b}$ and then Fourier transformed along the time axis to obtain a spectrum along the frequency ($f$) axis. If $I(\hat{\boldsymbol{s}},f)$ and $A(\hat{\boldsymbol{s}},f)$ are the sky brightness and antenna's directional power pattern, respectively, at different frequencies as a function of direction on the sky denoted by the unit vector ($\hat{\boldsymbol{s}}$), and $W_f\equiv W_f(f)$ denotes instrumental bandpass weights, then $V_{bf}$ can be written as:
+Interferometer array data known as {\it visibilities}, $V_b(f)$, represent correlations between time--series of electric fields measured by different antenna pairs with separation vectors $\boldsymbol{b}$ and then Fourier transformed along the time axis to obtain a spectrum along the frequency ($f$) axis. If $I(\hat{\boldsymbol{s}},f)$ and $A(\hat{\boldsymbol{s}},f)$ are the sky brightness and antenna's directional power pattern, respectively, at different frequencies as a function of direction on the sky denoted by the unit vector ($\hat{\boldsymbol{s}}$), and $W_\textrm{i}(f)$ denotes instrumental bandpass weights, then $V_b(f)$ can be written as:
 \begin{align}\label{eqn:obsvis}
-  V_{bf} &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_f\,e^{-i2\pi f\frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}}\,\dif\Omega,
+  V_b(f) &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_\textrm{i}(f)\,e^{-i2\pi f\frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}}\,\dif\Omega,
 \end{align}
 where, $c$ is the speed of light, and $\dif\Omega$ is the solid angle element to which $\hat{\boldsymbol{s}}$ is the unit normal vector. This equation is valid {\bf in general, including wide--field measurements and is a slight adaptation from \citet{van34}, \citet{zer38}, and \citet{tho01}}.
 
-{\bf The {\it delay spectrum}, $V_{b\tau}\equiv V_{b\tau}(\boldsymbol{b},\tau)$, is defined as} the inverse Fourier transform of $V_{bf}$ along the frequency coordinate:
+{\bf The {\it delay spectrum}, $\tilde{V}_b(\tau)$, is defined as} the inverse Fourier transform of $V_b(f)$ along the frequency coordinate:
 \begin{align}\label{eqn:delay-transform}
-  V_{b\tau} &\equiv \int V_{bf}\,W'_f\,e^{i2\pi f\tau}\,\dif f,
+  \tilde{V}_b(\tau) &\equiv \int V_b(f)\,W(f)\,e^{i2\pi f\tau}\,\dif f,
 \end{align}
-where, $W'_f\equiv W'_f(f)$ is a spectral weighting function which can be chosen to control the quality of the delay spectrum \citep{thy13,ved12}, and $\tau$ represents the signal delay between antenna pairs:
+where, $W(f)$ is a spectral weighting function which can be chosen to control the quality of the delay spectrum \citep{thy13,ved12}, and $\tau$ represents the signal delay between antenna pairs:
 \begin{equation}\label{eqn:delay}
   \tau = \frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}.
 \end{equation}
-The delay transform conventions used in this paper are described in appendix~\ref{sec:delay-conventions}. $V_{b\tau}$ is expressed in observer's units as Jy~Hz. 
+The delay transform conventions used in this paper are described in appendix~\ref{sec:delay-conventions}. $\tilde{V}_b(\tau)$ is expressed in observer's units as Jy~Hz. 
 
 The delay spectrum has a close resemblance to cosmological H{\sc i} spatial power spectrum. Appendix~\ref{sec:EoR-power-spectrum} gives an overview of the similarities and differences between the two. Foregrounds can be described in either framework. For our study, we find the delay spectrum approach to be simple and yet extremely useful. 
 
-In order to express a quantity derived from $V_{b\tau}$ that has units K$^2$(Mpc/$h$)$^3$ which is identical to that of the cosmological H{\sc i} power spectrum, we define the delay power spectrum:
+In order to express a quantity derived from $\tilde{V}_b(\tau)$ that has units K$^2$(Mpc/$h$)$^3$ which is identical to that of the cosmological H{\sc i} power spectrum, we define the delay power spectrum:
 \begin{align}\label{eqn:delay-power-spectrum}
-  P_\textrm{d}(\boldsymbol{k}_\perp,k_\parallel) &\equiv |V_{b\tau}|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
+  P_\textrm{d}(\boldsymbol{k}_\perp,k_\parallel) &\equiv |\tilde{V}_b(\tau)|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
 \end{align}
 with
 \begin{align}
@@ -264,7 +264,7 @@ with
 \end{align}
 where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\lambda$ is the wavelength of the band center, $k_\textrm{B}$ is the Boltzmann constant, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, $z$ is the redshift, $D\equiv D(z)$ is the transverse comoving distance, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, and $h$, $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology.
 
-In summary, the delay spectrum, $V_{b\tau}$, is obtained from {\it visibilities} which are the basic data blocks measured by each antenna pair, using equations~\ref{eqn:obsvis} and \ref{eqn:delay-transform}. $V_{b\tau}$ captures all the effects of EoR H{\sc i} signal corruption caused by foregrounds and the instrument. At the same time, it is closely related to the sought power spectrum containing critical information about spatial scales. In using the delay spectrum technique, visibilities from different baselines have not been averaged together. 
+In summary, the delay spectrum, $\tilde{V}_b(\tau)$, is obtained from {\it visibilities} which are the basic data blocks measured by each antenna pair, using equations~\ref{eqn:obsvis} and \ref{eqn:delay-transform}. $\tilde{V}_b(\tau)$ captures all the effects of EoR H{\sc i} signal corruption caused by foregrounds and the instrument. At the same time, it is closely related to the sought power spectrum containing critical information about spatial scales. In using the delay spectrum technique, visibilities from different baselines have not been averaged together. 
 
 \subsection{Delay Space}\label{sec:delay-space}
 
@@ -286,13 +286,13 @@ The spectral transfer function of the instrument convolves the {\it foreground w
 
 \subsection{Delay Spectrum Deconvolution}\label{sec:data-delay-spectrum}
 
-We obtain the delay spectrum of visibilities by taking the delay transform of each baseline's spectrum (equation~\ref{eqn:delay-transform}) choosing $W'_f$ to be a {\it Blackman--Harris} window function. The sky spectrum is multiplied in the instrument by weights, $W_f$, due to the instrumental passband and flagging of frequency channels possibly corrupted by radio frequency interference, which together are represented by the weights, $W_f$. In delay--space, these weights translate into a convolution by a point spread function (PSF). We deconvolve this PSF using a one dimensional CLEAN algorithm \citep{tay99} as described for the delay axis \citep{par09,par12b} to obtain the final delay spectra. The CLEAN procedure iteratively finds and subtracts peak values convolved by the Fourier transform of the weights. We limit the selection of peaks to modes inside the horizon delay limit, corresponding to smooth spectrum objects in the visible sky hemisphere. 
+We obtain the delay spectrum of visibilities by taking the delay transform of each baseline's spectrum (equation~\ref{eqn:delay-transform}) choosing $W(f)$ to be a {\it Blackman--Harris} window function. The sky spectrum is multiplied in the instrument by the instrumental passband and flagging of frequency channels possibly corrupted by radio frequency interference, which together are represented by the weights, $W_\textrm{i}(f)$. In delay--space, these weights translate into a convolution by a point spread function (PSF). We deconvolve this PSF using a one dimensional CLEAN algorithm \citep{tay99} as described for the delay axis \citep{par09,par12b} to obtain the final delay spectra. The CLEAN procedure iteratively finds and subtracts peak values convolved by the Fourier transform of the weights. We limit the selection of peaks to modes inside the horizon delay limit, corresponding to smooth spectrum objects in the visible sky hemisphere. 
 
 \section{Wide--Field Measurements}\label{sec:wide-field}
 
 With $\hat{\boldsymbol{s}}\equiv (l,m,n)$, equation~\ref{eqn:obsvis} can be written as \citep{tay99,tho01}:
 \begin{align}\label{eqn:obsvis-lmn}
-  V_{bf} &= \iint\limits_\textrm{sky} \frac{A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)}{\sqrt{1-l^2-m^2}}\,W_f\,e^{-i2\pi f\frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}}\,\dif l\,\dif m, 
+  V_b(f) &= \iint\limits_\textrm{sky} \frac{A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)}{\sqrt{1-l^2-m^2}}\,W_\textrm{i}(f)\,e^{-i2\pi f\frac{\boldsymbol{b}\cdot\hat{\boldsymbol{s}}}{c}}\,\dif l\,\dif m, 
 \end{align}
 where, $l$, $m$, and $n$ denote the direction cosines toward east, north, and zenith respectively, with $n\equiv\sqrt{1-l^2-m^2}$, and:
 \begin{align}\label{eqn:solid-angle}
@@ -384,17 +384,17 @@ Typically, the sensitivity of antennas to the primary field of view is high comp
 
 \section{The Murchison Widefield Array}\label{sec:MWA}
 
-We now use our simulations to analyze features in the observed delay power spectrum obtained using the MWA.
+We now use our simulations to analyze features in observed delay power spectrum obtained using the MWA.
 
 % \subsection{The Murchison Widefield Array (MWA)}\label{sec:instrument}
 
 MWA construction was completed in 2012 and, after commissioning, began its EoR observing program in 2013. The MWA is a 128--tile interferometer capable of observing a 30.72~MHz instantaneous band anywhere in the range 80--300~MHz. Each tile is a phased array of 16 dipoles, each in the shape of a bow--tie. This yields a primary field of view $\gtrsim$~20\arcdeg~ wide and multiple secondary lobes. The array layout is described in \citet{bea12}. %{\bf At the observing frequency of 185~MHz, we use $A_\textrm{e}=10.5$~m$^2$}.
 
-The MWA passband of width $\Delta B=30.72$~MHz is divided coarsely into 24$\times$1.28~MHz sub--bands with each sub--band weighted by a digital filter. The coarse channel shape is obtained using an 8--tap polyphase filter bank (PFB) and a Kaiser window with parameter $\beta=5$. {\bf Each of these coarse bands consists of 32 fine channels of width 40~kHz each}. After correcting for the shape of these coarse channels, the fine channels at the edges of these sub--bands are flagged because they are known to be contaminated by aliasing at a low level. % Any spectral flags, or other known weights constitutes $W_f$ in equation~\ref{eqn:obsvis}. 
+The MWA passband of width $\Delta B=30.72$~MHz is divided coarsely into 24$\times$1.28~MHz sub--bands with each sub--band weighted by a digital filter. The coarse channel shape is obtained using an 8--tap polyphase filter bank (PFB) and a Kaiser window with parameter $\beta=5$. {\bf Each of these coarse bands consists of 32 fine channels of width 40~kHz each}. After correcting for the shape of these coarse channels, the fine channels at the edges of these sub--bands are flagged because they are known to be contaminated by aliasing at a low level. % Any spectral flags, or other known weights constitutes $W_\textrm{i}(f)$ in equation~\ref{eqn:obsvis}. 
 
 % \subsection{EoR Observations}\label{sec:obsparms}
 
-{\bf The MWA is expected to be sensitive to the power spectrum of the H{\sc i} signal over the redshift range $6<z<10$ \citep{bow06,thy13,bea13}. Over 600~hours have been currently observed using the MWA with the objective of characterizing the nature of the sources that are responsible for ionizing the IGM, charting the evolution of the global neutral fraction, and probing the nature of quasar emissions by constraining the properties of their ionized proximity zones.}
+{\bf The MWA is expected to be sensitive to the power spectrum of the H{\sc i} signal over the redshift range $6<z<10$ \citep{bow06,bea13,thy13}. Over 600~hours have been currently observed using the MWA, targeting the science objectives outlined in \citet{bow13}.}
 
 The MWA targets two primary low-foreground fields for reionization observations. Here, we focus on the field at RA = 0$^\textrm{h}$, Dec = $-30\arcdeg$. The MWA tracks a patch of sky through antenna beams formed and steered electronically by controlling delay settings of the dipoles in an MWA tile. The pointing system is optimized to points on a regular $\sim$7\arcdeg~ grid. The sky drifts across to the nearest available pointing, shifting between grid points (once every $\sim 30$~minutes). This process is repeated throughout the course of the observation $\approx 4.86$~hours. 
 
@@ -422,12 +422,18 @@ We use the model described in \S\ref{sec:foreground} for the foreground sky. Fig
 \label{fig:sky-model-MWA}
 \end{figure*}
 
-{\bf We estimate thermal noise in the data using the {\it rms} of $V_{b\tau}$ obtained after {\it delay--deconvolution} across all antenna spacings for $|\tau| \geq 1$~$\mu$s using the relations:
+% {\bf We estimate the system temperature, $T_\textrm{sys}$, using the {\it rms} of $\tilde{V}_b(\tau)$ obtained after {\it delay--deconvolution} across all antenna spacings for $|\tau| \geq 1$~$\mu$s using the relation:
+% \begin{align}\label{eqn:Tsys}
+%   \Delta \tilde{V} &= \frac{2\,k_\textrm{B}\,T_\textrm{sys}\sqrt{\Delta B}}{A_\textrm{e}\sqrt{2\,\Delta t}} 
+% \end{align}
+% where, $\Delta f = 80$~kHz, and $\Delta t = 112$~s. The choice of threshold for $\tau$ is well outside the {\it foreground window}, where foreground contamination is negligible and thus yields a robust estimate of $T_\textrm{sys}$. We find the average system temperature to be $\sim 95$~K across all frequency channels and across all antenna pairs throughout the course of the observation. Hence, for our simulations, we use $T_\textrm{sys}=95$~K to match the thermal noise observed in the data.} 
+
+{\bf We estimate thermal noise, $\Delta V$, in the visibilities, $V_b(f)$, using the {\it rms} of $\tilde{V}_b(\tau)$ obtained after {\it delay--deconvolution} across all antenna spacings for $|\tau| \geq 1$~$\mu$s using the relations:
 \begin{align}\label{eqn:Tsys}
-  \Delta V_{b\tau}^\textrm{rms} &= \sqrt{N_\textrm{ch}}\,\Delta V_{bf}^\textrm{rms} \Delta f, \textrm{and} \\
-  \Delta V_{bf}^\textrm{rms} &= \frac{2\,k_\textrm{B}\,T_\textrm{sys}}{A_\textrm{e}\sqrt{2\,\Delta f\,\Delta t}},
+  \Delta \tilde{V} &= \sqrt{N_\textrm{ch}}\,\Delta V \Delta f, \quad\textrm{and} \\
+  \Delta V &= \frac{2\,k_\textrm{B}\,T_\textrm{sys}}{A_\textrm{e}\sqrt{2\,\Delta f\,\Delta t}},
 \end{align}
-where, $\Delta f = 80$~kHz, $\Delta t = 112$~s, and $N_\textrm{ch}=\Delta B/\Delta f$ is the number of frequency channels. The choice of threshold for $\tau$ is well outside the {\it foreground window}, where foreground contamination is negligible and thus yields a robust estimate of $T_\textrm{sys}$. We find the average system temperature to be $\sim 95$~K across all frequency channels and across all antenna pairs throughout the course of the observation. Hence, for our simulations, we use $T_\textrm{sys}=95$~K to match the thermal noise observed in the data.} 
+where, $\Delta f = 80$~kHz, $\Delta t = 112$~s, and $N_\textrm{ch}=\Delta B/\Delta f$ is the number of frequency channels. The choice of threshold for $\tau$ is well outside the {\it foreground window}, where foreground contamination is negligible and thus yields a robust estimate of $T_\textrm{sys}$. We find the average system temperature to be $\sim 95$~K. Hence, for our simulations, we use $T_\textrm{sys}=95$~K to match the thermal noise observed in the data.} 
 
 \subsection{Comparison of Data and Model}\label{sec:data-vs-model}
 
@@ -440,9 +446,9 @@ With the aforementioned foreground model, and instrumental and observational par
 \caption{Delay power spectra from MWA data (left) and modeling (right) for the {\it off--zenith} (top) and {\it zenith} (bottom) pointings. The {\it foreground wedge} is bounded by white dotted lines. Model matches the data to a level consistent with the uncertainties in foreground models and the antenna beam (as discussed in \S\ref{sec:data-vs-model}). \label{fig:fhd-sim-comparison}}
 \end{figure*}
 
-In order to make a quantitative comparison of delay spectra obtained with MWA data and our simulations, we consider the uncertainty in the assumed spectral index of our foreground model. Our foreground models are derived from other higher frequency catalogs and sky maps. The inherent spread in spectral index increases the uncertainty while predicting fluxes at the observing frequency. Using simple error propagation, the fractional error in the delay spectrum {\bf amplitude}, $|V_{b\tau}|$, caused by the spread in spectral index is $\sim \ln(f_\textrm{orig}/f)\,\Delta\alpha_\textrm{sp}$, where, $f_\textrm{orig}$ is the original frequency at which the catalog or map was created, $f=185$~MHz is the MWA observing frequency, and $\Delta\alpha_\textrm{sp}$ is the spread (HWHM) in spectral index. From \citet{mau03}, we assume $\Delta\alpha_\textrm{sp} \approx 0.35$ for point sources from NVSS and SUMSS catalogs. Although the model of \citet{deo08} yields a spectral index per direction on the sky, we could assume similar uncertainties exist in spectral indices of our diffuse sky model as well, which is predominantly derived from the 408~MHz map of \citet{has82}. Thus, fractional errors in delay spectrum {\bf amplitudes} from compact and diffuse components are $\sim$70\% and $\sim$30\% respectively. 
+In order to make a quantitative comparison of delay spectra obtained with MWA data and our simulations, we consider the uncertainty in the assumed spectral index of our foreground model. Our foreground models are derived from other higher frequency catalogs and sky maps. The inherent spread in spectral index increases the uncertainty while predicting fluxes at the observing frequency. Using simple error propagation, the fractional error in the delay spectrum {\bf amplitude} caused by the spread in spectral index is $\sim \ln(f_\textrm{orig}/f)\,\Delta\alpha_\textrm{sp}$, where, $f_\textrm{orig}$ is the original frequency at which the catalog or map was created, $f=185$~MHz is the MWA observing frequency, and $\Delta\alpha_\textrm{sp}$ is the spread (HWHM) in spectral index. From \citet{mau03}, we assume $\Delta\alpha_\textrm{sp} \approx 0.35$ for point sources from NVSS and SUMSS catalogs. Although the model of \citet{deo08} yields a spectral index per direction on the sky, we could assume similar uncertainties exist in spectral indices of our diffuse sky model as well, which is predominantly derived from the 408~MHz map of \citet{has82}. Thus, fractional errors in delay spectrum {\bf amplitudes} from compact and diffuse components are $\sim$70\% and $\sim$30\% respectively. 
 
-In addition to intrinsic model uncertainty, delay spectra from simulations and data each have fluctuations due to thermal noise in the delay spectrum with rms $\sim$ 1.4$\times 10^7$~Jy~Hz. We estimate the ratio of delay spectra from data and simulations as $\rho = |V^\textrm{D}_{b\tau}(\boldsymbol{b},\tau)|\,/\,|V^\textrm{S}_{b\tau}(\boldsymbol{b},\tau)|$, where superscripts D and S denote data and simulation, respectively. The median absolute deviation of $\log_{10}\rho$ inside the {\it foreground wedge} for both pointings is $\approx 0.28$. This corresponds to $\sim$~90\% fractional difference between data and modeling on average with either pointing. 
+In addition to intrinsic model uncertainty, delay spectra from simulations and data each have fluctuations due to thermal noise in the delay spectrum with rms $\sim$ 1.4$\times 10^7$~Jy~Hz. We estimate the ratio of delay spectra from data and simulations as $\rho = |\tilde{V}^\textrm{D}_b(\tau)|\,/\,|\tilde{V}^\textrm{S}_b(\tau)|$, where superscripts D and S denote data and simulation, respectively. The median absolute deviation of $\log_{10}\rho$ inside the {\it foreground wedge} for both pointings is $\approx 0.28$. This corresponds to $\sim$~90\% fractional difference between data and modeling on average with either pointing. 
 
 We also simulated delay spectra after assigning spectral indices drawn randomly from a {\it gaussian} distribution with a mean of $\langle\alpha_\textrm{sp}\rangle=-0.83$ and a HWHM of $\Delta\alpha_\textrm{sp}=0.35$ to the point sources in our compact foreground model. These simulations typically yielded a median absolute deviation of $\approx 0.29$ for $\log_{10}\rho$ indicating fractional differences of $\sim$~95\% {\bf between different realizations}. This demonstrates that a fractional deviation of $\sim$~90\% observed between data and simulations is in line with expectations when the aforementioned uncertainty in foreground models, thermal noise fluctuations in measurements, and uncertainties in antenna power pattern due to random delay fluctuations are taken into account. 
 
@@ -599,8 +605,7 @@ This work was supported by the U. S. National Science Foundation (NSF) through a
 
 Equation~\ref{eqn:obsvis} can be {\bf equivalently expressed} as:
 \begin{align}\label{eqn:vis}
-  V_{uf} &\equiv V_{uf}(\boldsymbol{u},f) \nonumber\\
-  &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_f\,e^{-i2\pi\boldsymbol{u}\cdot\hat{\boldsymbol{s}}}\,\dif\Omega,
+  V_u(f) &= \iint\limits_\textrm{sky} A(\hat{\boldsymbol{s}},f)\,I(\hat{\boldsymbol{s}},f)\,W_\textrm{i}(f)\,e^{-i2\pi\boldsymbol{u}\cdot\hat{\boldsymbol{s}}}\,\dif\Omega,
 \end{align}
 where, $\hat{\boldsymbol{s}}$ is measured with reference to a location on the sky referred to as the {\it phase center}, and $\boldsymbol{u}\equiv (u,v,w)$ denotes the spatial frequency vector. $w$ is aligned parallel to the direction of the phase center, while $u$ and $v$ lie on the transverse plane perpendicular to it. For measurements that are constrained to lie on this plane, we can choose $w=0$ without loss of generality and $\boldsymbol{u}$ effectively reduces to $\boldsymbol{u}\equiv (u,v)$, a two--dimensional vector. Then, $\boldsymbol{u}$ is directly related to the transverse spatial wavenumber mode as: 
 \begin{align}\label{eqn:k-perp}
@@ -614,14 +619,13 @@ Since we are concerned with a redshifted H{\sc i} spectral line from cosmologica
 \end{align}
 where, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, and $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology. This approximation holds under the assumption that the redshift range (or frequency band) is small enough within which cosmological evolution is negligible. Thus,
 \begin{align}\label{eqn:los-transform}
-  V_{u\eta} &\equiv V_{u\eta}(\boldsymbol{u},\eta) \nonumber\\
-  &\equiv \int V_{uf}(\boldsymbol{u},f)\,W'_f\,e^{i2\pi f\eta}\,\dif f
+  \tilde{V}_u(\eta) &\equiv \int V_u(f)\,W(f)\,e^{i2\pi f\eta}\,\dif f
 \end{align}
-represents the true spatial Fourier representation of the three--dimensional sky brightness distribution. This approach has been discussed in detail in \citet{mor04}. The spatial power spectrum of EoR H{\sc i} distribution, $P(\boldsymbol{k}_\perp,k_\parallel)$, and $V_{u\eta}$ are related by \citep{mor04,mcq06,par12a}: 
+represents the true spatial Fourier representation of the three--dimensional sky brightness distribution. This approach has been discussed in detail in \citet{mor04}. The spatial power spectrum of EoR H{\sc i} distribution, $P(\boldsymbol{k}_\perp,k_\parallel)$, and $\tilde{V}_u(\eta)$ are related by \citep{mor04,mcq06,par12a}: 
 \begin{align}\label{eqn:true-power_spectrum}
-  P(\boldsymbol{k}_\perp,k_\parallel) &\simeq |V_{u\eta}|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
+  P(\boldsymbol{k}_\perp,k_\parallel) &\simeq |\tilde{V}_u(\eta)|^2\left(\frac{A_\textrm{e}}{\lambda^2\Delta B}\right)\left(\frac{D^2\Delta D}{\Delta B}\right)\left(\frac{\lambda^2}{2k_\textrm{B}}\right)^2,
 \end{align}
-where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, $\lambda$ is the wavelength of the band center, and $k_\textrm{B}$ is the Boltzmann constant. Thus, $V_{u\eta}$ inferred from observations, in units of Jy~Hz, can be converted into an equivalent cosmological H{\sc i} power spectrum $P(\boldsymbol{k}_\perp,k_\parallel)$, in units of K$^2$~Mpc$^3$ or, more generally, K$^2$(Mpc/$h$)$^3$, where $h$ is the Hubble constant factor.
+where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, $\lambda$ is the wavelength of the band center, and $k_\textrm{B}$ is the Boltzmann constant. Thus, $\tilde{V}_u(\eta)$ inferred from observations, in units of Jy~Hz, can be converted into an equivalent cosmological H{\sc i} power spectrum $P(\boldsymbol{k}_\perp,k_\parallel)$, in units of K$^2$~Mpc$^3$ or, more generally, K$^2$(Mpc/$h$)$^3$, where $h$ is the Hubble constant factor.
 
 Without loss of generality, the phase center can be assumed to be the zenith relative to the local tangent plane. Then $\boldsymbol{u}$ lies on this plane for measurements constrained to be on it. If the array of antennas are also coplanar lying on the local tangent plane, then $\boldsymbol{u}=\boldsymbol{b}/\lambda$. Under such circumstances, equations~\ref{eqn:obsvis} and \ref{eqn:delay} closely resemble equations~\ref{eqn:vis} and \ref{eqn:los-transform} respectively. However, they are not quite identical to each other. It is because $\boldsymbol{b}$ is independent of frequency while $\boldsymbol{u}$ is not. \citet{par12b} and \citet{liu14a} have discussed the mathematical correspondence between the two. 
 

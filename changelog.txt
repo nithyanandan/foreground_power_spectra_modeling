@@ -1,3 +1,16 @@
+from 2e67f14:
+============
+
+In ms.tex,
+
+(*) Change notation of W_f to W_i(f)
+(*) Change notation W'_f to W(f)
+(*) Change notation V_{uf} to V_u(f)
+(*) Change notation V_{bf} to V_b(f)
+(*) Change notation V_{u\eta} to \tilde{V}_u(\eta)
+(*) Change wording slightly in data-model comparison subsection
+(*) Cite Bowman et al.(2013) for MWA science objectives
+
 from cf27bde:
 ============
 
