@@ -1,3 +1,10 @@
+from cf27bde:
+============
+
+In ms.tex,
+
+(*) Change appendix A slightly
+
 from 45a74e9:
 ============
 
