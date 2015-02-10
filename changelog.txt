@@ -1,3 +1,15 @@
+from fb0bec1:
+============
+
+In ms.tex,
+
+(*) Add summary paragraph to Delay Spectrum section
+(*) Change wording in Wide-field measurements section slightly
+(*) Remove citation of Tingay et al.(2013) in subsection Instrument
+Model
+(*) Rename subsection Fourier Delay Space to Delay Space
+(*) Change caption to figure on wide-field effects slightly 
+
 from 89383e7:
 ============
 
