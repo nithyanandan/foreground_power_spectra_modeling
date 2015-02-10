@@ -1,3 +1,20 @@
+from 45a74e9:
+============
+
+In ms.tex,
+
+(*) Chnage title of S5 to Murchison Widefield Array
+(*) Rename and renumber subsections under S5
+(*) Change wording in caption of figure on wide-field effects slightly
+(*) Change wording in subsection Delay Space slightly
+(*) Change wording in caption of Delay space figure slightly
+(*) Change wording in subsection Instrument model slightly
+(*) Change wording in caption of MWA data vs. model comparison figure
+slightly
+(*) Change wording in caption of simulated CSM and DSM delay spectra 
+figure slightly
+(*) Change wording of caption of three-baseline figure slightly
+
 from fb0bec1:
 ============
 
