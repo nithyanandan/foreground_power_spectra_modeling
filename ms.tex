@@ -264,7 +264,7 @@ with
 \end{align}
 where, $A_\textrm{e}$ is the effective area of the antenna, $\Delta B$ is the bandwidth, $\lambda$ is the wavelength of the band center, $k_\textrm{B}$ is the Boltzmann constant, $f_{21}$ is the rest frame frequency of the 21~cm spin flip transition of H{\sc i}, $z$ is the redshift, $D\equiv D(z)$ is the transverse comoving distance, $\Delta D$ is the comoving depth along the line of sight corresponding to $\Delta B$, and $h$, $H_0$ and $E(z)\equiv [\Omega_\textrm{M}(1+z)^3+\Omega_\textrm{k}(1+z)^2+\Omega_\Lambda]^{1/2}$ are standard terms in cosmology.
 
-In our present study, we use a latitude of -26.701\arcdeg~ and an antenna layout identical to that of the MWA \citep{bea12} for the observatory. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). {\bf Their deviation from coplanarity is negligible}. For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. {\bf Note that visibilities from different baselines have not been averaged together in this analysis}. 
+Note that visibilities from different baselines have not been averaged together in this analysis. 
 
 \subsection{Fourier Delay Space}\label{sec:delay-space}
 
@@ -303,7 +303,7 @@ When the synthesized field is small, where $A(\hat{\boldsymbol{s}},f)$ or $I(\ha
 
 In a wide--field measurement, neither $A(\hat{\boldsymbol{s}},f)$ nor $I(\hat{\boldsymbol{s}},f)$, in general, is negligible anywhere in the visible hemisphere. The solid angle per pixel on the sky in direction cosine coordinates changes significantly with direction (equation~\ref{eqn:solid-angle}), increasing steeply towards the horizon. Hence, the approximations in the narrow--field scenario do not apply. For example, even if $A(\hat{\boldsymbol{s}},f)$ and $I(\hat{\boldsymbol{s}},f)$ are held constant across the visible hemisphere, the amplitude of the integrand in equation~\ref{eqn:obsvis-lmn} is still dependent on direction. Therefore, in a significant departure from a narrow--field measurement, the wide--field visibility from a uniform brightness distribution on a non--zero antenna spacing is not zero.
 
-Figure~\ref{fig:usm} shows the wide--field delay power spectrum response of a uniformly illuminated sky with no spectral variation measured by antenna elements with a uniform power pattern across the sky. Notice the features arising due to the direction--dependent solid angle term and the steep rise in power towards the horizon limits. Wide--field effects are prevalent on all antenna spacings, including the longest ones used in this study. 
+Figure~\ref{fig:usm} shows the wide--field delay power spectrum response of a uniformly illuminated sky with no spectral variation measured by antenna elements arranged identical to that in the MWA antenna array layout \citep{bea12} with a uniform power pattern across the sky and a bandwidth of 30.72~MHz centered around 185~MHz (refer to \S\ref{sec:instrument_model} for a detailed description of the instrument model). Notice the features arising due to the direction--dependent solid angle term and the steep rise in power towards the horizon limits. Wide--field effects are prevalent on all antenna spacings, including the longest ones used in this study. 
 
 \begin{figure}[htb]
 \centering
@@ -320,7 +320,20 @@ We conclude these are generic to all instruments making wide--field measurements
 
 \section{Simulations}\label{sec:sim}
 
-We choose an observing frequency of 185~MHz ($z\simeq 6.68$) and a flat passband of width $\Delta B = 30.72$~MHz to roughly match those of ongoing MWA EoR observations. Now we describe the foreground and instrumental models used in our simulations. 
+We describe the instrument and foreground models used in our simulations. 
+
+\subsection{Instrument Model}\label{sec:instrument_model}
+
+{\bf In our present study, we use a latitude of -26.701\arcdeg~ and an antenna layout identical to that of the MWA \citep{bea12} for the observatory. The array is arranged as a centrally condensed core of $\sim$~300~m --- there are many spacings in the range 5--50~m --- and a radial density that falls off as the inverse of the radius, with the longest baselines at 3~km. Here we focus on antenna spacings $|\boldsymbol{b}| \le 200$~m (spatial scales relevant to reionization). Their deviation from coplanarity is negligible. For geometrical intuition, we restrict the orientation ($\theta_b$, measured anti-clockwise from East) of all baselines to lie in the range $-67.5\arcdeg \leq \theta_b < 112.5\arcdeg$. Baselines oriented in the other half--plane measure conjugate visibilities with delays of equal magnitude but of opposite sign and hence are ignored in our analysis. We choose an observing frequency of 185~MHz ($z\simeq 6.68$) and a flat passband of width $\Delta B = 30.72$~MHz to roughly match those of ongoing MWA EoR observations. See \citet{tin13} for a detailed description of the MWA instrument}. 
+
+One of the principal components of the instrument model is the antenna power pattern, $A(\hat{\boldsymbol{s}},f)$ (see equation~\ref{eqn:obsvis}). It is determined by the shape of its aperture. Using a few examples, we examine the role the geometrical shape of the aperture plays in shaping the characteristics of delay power spectrum. We consider the following antenna elements placed at the MWA tile locations:
+\begin{itemize}
+\item {\it Dipole}: An East--West dipole of length 0.74~m at a height 0.3~m above a ground plane. $A_\textrm{e}=(\lambda/2)^2$.
+\item {\it Phased Array}: A 4$\times$4 array of isotropic radiators with a grid spacing of 1.1~m at a height 0.3~m above the ground plane placed in an arrangement similar to that of an MWA tile. $A_\textrm{e}=16\,(\lambda/2)^2$. 
+\item {\it Dish}: Diameter of 14~m similar to that proposed for HERA, with $A_\textrm{e}\approx 154$~m$^2$. The power pattern is simulated using an {\it Airy} pattern where its sensitivity beyond the horizon is forced to zero.
+\end{itemize}
+
+% The presence of a ground plane below the dipole and the phased array introduces a smoother suppression of sensitivity near the horizon, whereas this transition is abrupt in the case of the dish.
 
 \subsection{Foreground Model}\label{sec:foreground}
 
@@ -347,16 +360,9 @@ These criteria yield 100 objects from the SUMSS catalog and 250 objects from the
 \caption{Foreground model at 185~MHz consisting of diffuse emission (top) and bright point sources (bottom) visible during a snapshot at 0.09~hours LST. In the diffuse model, the Galactic center appears to have just set in the West. \label{fig:sky-model-generic}}
 \end{figure}
 
-\subsection{Instrument Model}\label{sec:instrument_model}
+\subsection{Role of Antenna Geometry}\label{sec:antenna-shape}
 
-The instrument model consists primarily of the antenna power pattern, $A(\hat{\boldsymbol{s}},f)$ (see equation~\ref{eqn:obsvis}). It is determined by the shape of its aperture. Through the use of a few examples, we examine the role the geometrical shape of the aperture plays in shaping the characteristics of delay power spectrum. We consider the following antenna elements placed at the MWA tile locations:
-\begin{itemize}
-\item {\it Dipole}: An East--West dipole of length 0.74~m at a height 0.3~m above a ground plane. $A_\textrm{e}=(\lambda/2)^2$.
-\item {\it Phased Array}: A 4$\times$4 array of isotropic radiators with a grid spacing of 1.1~m at a height 0.3~m above the ground plane placed in an arrangement similar to that of an MWA tile. $A_\textrm{e}=16\,(\lambda/2)^2$. 
-\item {\it Dish}: Diameter of 14~m similar to that proposed for HERA, with $A_\textrm{e}\approx 154$~m$^2$. The power pattern is simulated using an {\it Airy} pattern where its sensitivity beyond the horizon is forced to zero.
-\end{itemize}
-
-The power patterns of these antenna geometries at 185~MHz for the {\it zenith} pointing are shown in Figure~\ref{fig:power-patterns}. The presence of a ground plane below the dipole and the phased array introduces a smoother suppression of sensitivity near the horizon, whereas this transition is abrupt in the case of the dish.
+The power patterns of the aforementioned antenna geometries at 185~MHz for the {\it zenith} pointing are shown in Figure~\ref{fig:power-patterns}. 
 
 \begin{figure*}[htb]
 \centering
