@@ -1,3 +1,34 @@
+from d946469:
+============
+
+In ApJ_referee_report_1_addressed.txt,
+
+(*) Address referee comments with reference to the alternate version of
+the draft
+(*) Draft contents of the cover letter
+
+In ms.tex,
+
+(*) Change wording in abstract slightly
+(*) Change wording in S5 slightly and cite Lonsdale et al. 2009 and 
+Tingay et al. 2013 for the MWA instrument.
+(*) Change wording on Tsys estimation slightly in S5.2 Modeling 
+subsection 
+(*) Change wording slightly and mention Pober et al (2015, in 
+preparation) Foreground model subsection to support use of wide-field 
+foreground model
+(*) Change wording slightly in Delay Spectrum section
+(*) Change wording slightly in Delay Space subsection
+(*) Change caption of Foreground model figure slightly
+(*) Change wording slightly on MWA instrument description
+(*) Change wording slightly in Analysis of Foreground Signatures 
+subsection and its subsubsections
+(*) Reword caption to figure 9 slightly
+(*) Reword caption to figure 10 slightly
+(*) Reword Summary section slightly
+(*) Reword appendix A slightly
+(*) Refer to the correct equations in appendix B
+
 from 2e67f14:
 ============
 
