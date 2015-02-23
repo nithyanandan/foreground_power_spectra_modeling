@@ -1,3 +1,10 @@
+from b87734d:
+============
+
+In ms.tex,
+
+(*) Specify cosmological parameters used in S2
+
 from 85029e9:
 ============
 
