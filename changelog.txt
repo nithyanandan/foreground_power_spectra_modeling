@@ -1,3 +1,10 @@
+from 37bab06:
+============
+
+In ms.tex,
+
+(*) Remove all bold face fonts
+
 from 29407e6:
 ============
 
