@@ -1,3 +1,10 @@
+from a7b9a1f:
+============
+
+In ms.tex,
+
+(*) Make minor edits throughout the paper
+
 from 049772a:
 ============
 
