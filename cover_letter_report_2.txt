@@ -1,0 +1,21 @@
+We thank the referee for a positive review of our paper. We have taken into consideration the minor suggestions mentioned by the referee and have addressed it below. We now submit the revised draft for publication.
+
+Sincerely,
+Nithyanandan Thyagarajan 
+(on behalf of all authors of this paper)
+
+Specific responses:
+
+1) I remain a little hung up on the error bars in Figure 8. I would expect thermal noise to affect the error bars of the measured wedge, but I do not understand why it is present in the simulations unless one is trying to make claims about calibrating the simulations with measurements. But since there are no measured data on the Figure, such a claim isn't supported. And in any case, the errors would be applied to the measurements in this case, and not the model. I still suggest that the error bars in this figure are distracting and irrelevant, and should be removed.
+
+[Response] We have now removed the error bars in figure 8.
+
+2) One inaccurate statement is made in the summary: 
+"two equivalent interpretations: delay bins near the horizon subtend larger solid angles and therefore contain larger integrated emission; or, foreshortening of baselines towards the horizon makes them sensitive to emission on large angular scales which match the inverse of their foreshortened lengths"
+Both of these effects are important, but they are not equivalent interpretations. One is a purely geometrical argument that delay bins cover a larger angular area near the horizon; the other adds to this effect the fact that the angular power spectrum of diffuse foregrounds rises at low l modes, and so foreshortened baselines measure the diffuse foreground to be brighter as well. I would carefully distinguish these two effects.
+
+[Response] We have reworded as suggested.
+
+3) A final suggestion: Figure 9b shows the MWA beam overlaid with delay gradients. It would be nice, for one or two chosen delay gradients, to histogram the beam response in delay and plot the result. If the authors' theory is correct, this should go a fair way toward predicting the profiles shown in Figure 8 (although it will not have the effect of diffuse foregrounds becoming brighter near the horizon.
+
+[Response] We have assigned this to future work and left it unchanged in the current draft.
