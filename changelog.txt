@@ -1,3 +1,16 @@
+from e109571:
+============
+
+In eor.bib,
+
+(*) Add bibtex entry for Offring et al(2015) COTTER pipeline
+
+In ms.tex,
+
+(*) Add citation to COTTER pipeline by Offringa et al(2015)
+(*) Remove citations to Offringa et al 2010, 2012
+(*) Remove footnote for AOFLAGGER
+
 from 37bab06:
 ============
 
