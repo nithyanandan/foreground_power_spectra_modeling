@@ -1,3 +1,14 @@
+from 29407e6:
+============
+
+In ms.tex,
+
+(*) Modify 3-baseline figure (figure 8) by removing gray shade showing
+expected uncertainties. Modify caption accrodingly.
+(*) Modify text describing figure 8 according to changes above
+(*) Change "equivalent" to "related" in describing interpretations pf
+the pitchfork effect in S3 and Summary
+
 from b87734d:
 ============
 
