@@ -1,3 +1,11 @@
+from fa05a33:
+============
+
+In ms.tex,
+
+(*) Change "alternate" interpretations of pitchfork effect to two
+related effects contributing to it based on Judd's suggestion
+
 from 1eb64f6:
 ============
 
