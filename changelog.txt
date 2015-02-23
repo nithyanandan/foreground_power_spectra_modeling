@@ -1,3 +1,10 @@
+from a2e2364:
+============
+
+In ms.tex,
+
+(*) Remove commented parts of text
+
 from fa05a33:
 ============
 
