@@ -1,3 +1,10 @@
+from d3b979d:
+============
+
+In ms.tex,
+
+(*) Rearrange keywords
+
 from a03eb32:
 ============
 
