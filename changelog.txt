@@ -1,3 +1,10 @@
+from 6efc10d:
+============
+
+In eor.bib,
+
+(*) Update Offringa et al.(2015) reference
+
 from aaf2226:
 ============
 
