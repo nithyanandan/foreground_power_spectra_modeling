@@ -1,3 +1,10 @@
+from 26c983b:
+============
+
+In eor.bib,
+
+(*) Update Offringa et al.(2015) reference
+
 from d3b979d:
 ============
 
