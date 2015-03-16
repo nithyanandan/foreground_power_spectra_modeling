@@ -1,0 +1,27 @@
+I approve most of the corrections. However, I do not approve of certain changes and the following changes must be made. This is followed by my response to your specific questions at the end of the manuscript.
+
+1) Footnote #20: Remove the hyphen in the acronym. The acronym must be CAASTRO and not CAAS-TRO
+
+2) Page 3, text following equation 6: The value and units of H0 cannot be split between multiple lines. Thus H_0 = 100 km s^{-1} Mpc^{-1} must appear in the same line. This applies to all physical quantities and their units in this paper.
+
+3) Last sentence of second paragraph in section 4.2, it should be specified as "170 MHz" instead of just "170"
+
+4) In fifth paragraph in section 5, neither RA nor declination can be split between two lines. Thus R.A.=0^$\textrm{h}$ and decl.=-30\arcdeg each should not be split over two lines.
+
+5) Last sentence of second paragraph in section 5.3, the "%" sign should be specified after "70" as "70%". 
+
+6) In the last sentence of the paragraph that begins with "In other words..." in section 6, the "%" sign should be specified after "5" as "5%". 
+
+7) The second line after equation B3 is awkwardly space. It is acceptable to change the order in which H_0 and E(z) are mentioned in the second and third lines in the text following equation B3 if that helps get rid of this awkward spacing. For instance, both "H_0 and E(z)... are standard terms in cosmology" and "E(z)... and H_0 are standard terms in cosmology" are acceptable.
+
+8) The reference Offringa et al.(2015) should be updated from arXiv specifier to "Offringa, A. R., Wayth, R. B., Hurley-Walker, N., et al. 2015, PASA, 32, 8". The complete bibtex entry can be found here: http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015PASA...32....8O&data_type=BIBTEX&db_key=AST&nocookieset=1
+The abstract for this reference can be found here: http://adsabs.harvard.edu/abs/2015PASA...32....8O
+
+Response to specific questions at end of manuscript:
+
+Q1: The full name of author in Pober et al.(2015) is Jonathan C. Pober. 
+
+Q2: I could not find the publisher details for Taylor et al.(1999) from the NASA ADS or any other source. This is perhaps because it is not a book but rather a summary of conference proceedings. The ADS link for this reference can be found here: http://adsabs.harvard.edu/abs/1999ASPC..180.....T
+
+Q3: All journal references have links.
+
