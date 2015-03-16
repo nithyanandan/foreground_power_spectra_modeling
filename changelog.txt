@@ -1,3 +1,29 @@
+from 0ed619a:
+============
+
+In ms.tex,
+
+Make ApJ Proof corrections.
+
+(*) Change HI to H I
+(*) Change double hyphens to single hyphens
+(*) Change non-linear to nonlinear
+(*) Minor changes
+(*) Remove hyphens in line-of-sight
+(*) Change "dot-dashed" to "dotted-dashed"
+(*) Change notation of fractional degrees
+(*) Change itemizd list to enumerated list
+(*) Change hour/hours to hr
+(*) Remove hyphens in signal-to-noise
+(*) Change "towards" to "toward"
+
+In eor.bib,
+
+(*) Update bibtex reference to Taylor et al.(1999)
+
+Add proof1.txt containing responses to proof corrections to git
+repository
+
 from 6efc10d:
 ============
 
