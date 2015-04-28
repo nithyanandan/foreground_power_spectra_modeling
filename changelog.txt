@@ -1,3 +1,8 @@
+from f799fb2:
+============
+
+(*) Add published article NT_ApJ_804_1_14o.pdf to git repository
+
 from 1b4d3d5:
 ============
 
